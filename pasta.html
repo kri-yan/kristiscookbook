@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/recipe.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <!-- Javascript -->  
+    <script src="javascript/recipeSearch.js"></script>
+	<title> Kristi's Cookbook | Pasta & Noodles </title>
+</head>
+<body onload="loadRecipes()">
+	<!-- Header -->
+	<header id="top_page">
+        <br>
+	</header>
+	
+	<!-- Nav -->
+	<div id="top">
+        <a href="index.html"> <img src="images/small_logo.jpg" alt="Kristi's Cookbook"></a>
+	<nav>
+    <div class="decor_bar">
+        <br>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html"> About </a>
+        <a href="resources.html">Resources</a>
+        <div class="dropdown">
+            <a href="all_recipes.html"> Recipes</a>
+            <div class="categories">
+                <a href="breakfast.html"> Breakfast </a>
+                <a href="desserts.html">Desserts</a>
+                <a href="drinks.html"> Drinks </a>
+                <a href="meat.html">Meat & Tofu </a>
+                <a href="pasta.html">Pasta & Noodles</a>
+                <a href="seafood.html"> Seafood </a>
+                <a href="snacks.html">Snacks</a>
+                <a href="soup.html"> Soups</a>
+                <a href="vegetables.html"> Vegetables</a>
+            </div>
+        </div>
+        <a href="blog.html"> Blog </a>
+    </div>
+	</nav>
+    </div>
+    <div class="decor_bar">
+        <br>
+    </div>
+
+    <!-- Begin Content-->
+    <!-- Mobile Nav -->
+    <button id="bttnMobileNav" onclick="openMobile()"> <span></span><span></span><span></span> </button>
+    <div id="mobileNav">
+        <button id="bttnMobileClose" onclick="closeMobile()"> &#10006; </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><button onclick="mobiledrop()"> Recipes&#9662; </button></li>
+                <ul id="mobileCat">
+                    <li><a href="all_recipes.html">Recipe Index</a></li>
+                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="desserts.html">Desserts</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                    <li><a href="meat.html">Meat & Tofu</a></li>
+                    <li><a href="pasta.html">Pasta & Noodles</a></li>
+                    <li><a href="seafood.html">Seafood</a></li>
+                    <li><a href="soup.html">Soups</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                </ul>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <!-- Main Column (left) -->
+        <div class="column main">
+            <!-- Mobile Search Bar -->
+            <div class="mobile">
+                <img id="mobileIcon" src="images/icons/search-icon.jpg">
+                <input id="mobileSearch" list="recipeList" name="mobileSearch" placeholder="Search..." oninput="mobileSearch()">
+                <datalist id="recipeList"></datalist>
+            </div>
+            <!-- Caprese Chicken Pasta -->
+            <div class="recipe" id="caprese_chicken_pasta">
+                <p class="name"> Caprese Chicken Pasta </p>
+                <p class="serving"> Serving Size: 4-6 servings </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <p class="sub_lbl"> Marinade </p>
+                <ul class="ingredients">
+                    <li> 1 lb of <a href="meat.html#herb_chicken_marinade" target="_blank"> Herb Chicken Marinade</a> chicken </li>
+                    <li> 16 oz of grape tomatoes </li>
+                    <li> &frac12; of a red onion </li>
+                    <li> 16 oz of mozzerella cheese </li>
+                    <li> 10 basil leaves </li>
+                    <li> 5 cloves of garlic </li>
+                    <li> 1&frac12; tsp of herbes de provence or italian seasoning </li>
+                    <li> &frac12; tsp of black pepper </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Dice the chicken into 1" cubes. </li>
+                    <li> Marinate the meat using the <a href="meat.html#herb_chicken_marinade" target="_blank"> Herb Chicken Marinade</a>.</li>
+                    <li> Boil water and cook desired pasta according to the box's instructions. </li>
+                    <li> Slice the grape tomatoes in half and dice up the red onions and mozzerella. </li>
+                    <li> Finely dice the garlic and basil. </li>
+                    <li> In a pan, heat up about 2 spatulas worth of olive oil. </li>
+                    <li> Cook the chicken on medium high heat. </li>
+                    <li> Once cooked, set aside. </li>
+                    <li> Add another spatula worth of olive oil. </li>
+                    <li> On medium low heat, add in the garlic and cook until the smell of garlic comes out. </li>
+                    <li> Add in the tomatoes, onion, and basil. Sprinkle salt and stir until onions are transulcent. </li> 
+                    <li> Add in the herbes, black pepper, and chicken.  </li>
+                    <li> Cook on medium heat for about 2 minutes. </li>
+                    <li> Add in the cooked pasta and mix. </li>
+                    <li> Remove from heat and add in the mozzerella </li>
+                </ol>
+            </div>
+            <!-- Classic Tomato Sauce -->
+            <!-- Mushroom Tomato Sauce -->
+            <div class="recipe" id="mushroom_tomato_sauce">
+                <p class="name"> Mushroom Tomato Sauce </p>
+                <p class="serving"> Serving Size: 1 qt of sauce</p>
+                <br>
+                <p class="lbl"> Ingredients: </p>
+                <ul class="ingredients">
+                    <li> &frac12; of a white onion </li>
+                    <li> 12 oz of white mushrooms </li>
+                    <li> 1 tomato </li>
+                    <li> 14 oz of tomato sauce </li>
+                    <li> 3 cloves of garlic </li>
+                    <li> 6 basil leaves </li>
+                    <li> &frac12; tsp of oregano </li>
+                    <li> &frac12; tsp of black pepper </li>
+                    <li> &frac12; tsp of paprika </li>
+                    <li> &frac12; tsp of garlic powder </li>
+                    <li> &frac14; tsp of salt </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Dice the white onions and tomatoes. </li>
+                    <li> Slice the mushrooms and basil leaves. </li>
+                    <li> Finely mince the garlic. </li>
+                    <li> Warm up a pan and add about 2 spatulas worth of olive oil. </li>
+                    <li> Add in the garlic and stir until garlic smells comes out. </li>
+                    <li> Add in the white onions and a sprinkle of salt.</li>
+                    <li> Sautee the onions on medium heat until about halfway done (when the onions are half translucent). Then, add in the tomatoes and another sprnkle of salt. </li>
+                    <li> Cover and cook on medium low heat for about 2 minutes. </li>
+                    <li> When tomatoes start to soften, add in the tomato sauce. </li>
+                    <li> Add in the basil, oregano, pepper, paprika, garlic powder, and salt. </li>
+                    <li> Stir occasionally and let it cook on medium low heat until boils. </li>
+                    <li> Add in the mushrooms and stir until the sauce boils again and mushrooms are all cooked. </li>
+                    <li> Enjoy with your favorite type of pasta (recommended: Ravioli). </li>
+                </ol>
+            </div>
+            <!-- Black Bean Noodles -->
+            <div class="recipe" id="black_bean_noodles">
+                <p class="name"> Black Bean Noodles </p>
+                <p class="other name"> Jjajangmyeon / 炸醬麵</p>
+                <p class="serving"> Serving Size: 4-6 servings </p>
+                <br>
+                <p class="lbl"> Ingredients: </p>
+                <ul class="ingredients">
+                    <li> 1&frac12; lbs of soy sauce marinated ground pork  </li>
+                    <li> 1 white onion </li>
+                    <li> 2 gold potatoes </li>
+                    <li> 16 oz of five spice bean curd (五香豆干) </li>
+                    <li> 4 tbsp of Chinese black bean sauce </li>
+                    <li> 1 tsp of sesame oil </li>
+                    <li> 6 cucumbers </li> 
+                    <li> Noodles (Korean fresh-cut knife noodles or udon noodles) </li>
+                    <li> Hard boiled eggs - 1 per serving (optional) </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step: </p>
+                <ol class="steps">
+                    <li> Marinate the ground pork using the <a href="meat.html#soy_sauce_ground_pork" target="_blank"> Soy Sauce Ground Pork Marinade</a>. </li>
+                    <li> Dice up the onions and potatoes. </li>
+                    <li> Warm up a pan and add about 2 spatulas worth of oil. </li>
+                    <li> Once the oil is heated, add in the onions. </li>
+                    <li> Sautee the onions on medium heat. </li>
+                    <li> Once the onions are clear in color, add in the marinated ground pork. </li>
+                    <li> On medium high heat, cook the pork and onions until the pork is about 80% done. </li>
+                    <li> Add in the potatoes and about &frac14; cup of cold water. Lower to medium heat. </li>
+                    <li> Stir and then cover. Check and stir every 2 minutes until potatoes are soft. Add cold water if needed so that the pot doesn't get burned. </li>
+                    <li> In the meantime, dice the bean curd and cook the noodles. </li>
+                    <li> Once the potaotes are ready, add in the bean curd and stir. </li>
+                    <li> Let it cook for about a minute. </li>
+                    <li> On low heat, add in the black bean sauce. </li>
+                    <li> Stir until the black bean sauce covers everything. </li> 
+                    <li> Let it cook on low heat for about 2 minutes. </li>
+                    <li> Once cooked, add in the sesame oil and stir until incorporated. Then, turn off the heat. </li>
+                    <li> Slice the cucumbers into thin long strips. </li> 
+                    <li> Mix the noodles with the sauce.</li>
+                    <li> Top with hard boiled egg and cucumbers. </li>
+                </ol>
+            </div>
+            <!-- Taiwanese Beef Noodle Soup -->
+            <div class="recipe" id="beef_noodle_soup">
+                <p class="name"> Taiwanese Beef Noodle Soup </p>
+                <p class="other name"> 紅燒牛肉麵 </p>
+                <p class="serving"> Serving Size: 3 qts of soup </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> 2 lbs of beef hindshank </li>
+                    <li> 1 tbsp of minced garlic (about 7 cloves) </li>
+                    <li> 1 tbsp of minced ginger </li>
+                    <li> &frac14; cup of soy sauce </li>
+                    <li> &frac12; tsp of brown sugar </li>
+                    <li> 4 tsp of spicy black bean sauce (辣豆瓣醬) <b>OR</b> 2 tsp of black bean sauce (豆瓣醬) + 2 tsp of chili garlic sauce (蒜蓉辣椒醬) </li>
+                    <li> 6 scallions </li>
+                    <li> 2 large tomatoes </li>
+                    <li> 2 star anise (八角) </li>
+                    <li> Noodles </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step</p>
+                <ol class="steps">
+                    <li> Boil a pot of water. </li>
+                    <li> Slice the beef into &frac14;" thick slices. </li>
+                    <li> In the pot of boiling water, add in the beef, making sure not to overcrowd the pot. If needed, cook beef in two batches. </li>
+                    <li> Cook the beef on medium heat until the water boils again. Once the water boils, let it cook for 2 minutes and then remove from pot. </li>
+                    <li> Rinse the cooked beef in cold water, pressing down to make sure all of the blood from the meat comes out. </li>
+                    <li> Mince the garlic and ginger. </li>
+                    <li> Cut the tomatoes into 1" cubes and set aside. </li>
+                    <li> Dice the scallions and set aside. </li>
+                    <li> In a pan, heat up about 1 spatuals worth of oil. </li>
+                    <li> On medium low heat, add in the garlic and ginger. Cook until the smell of garlic and ginger comes out. </li>
+                    <li> Add in the beef and stir. </li>
+                    <li> Add in the soy sauce, brown sugar, and spicy black bean sauce. </li>
+                    <li> Stir until the sauce covers all of the beef. </li>
+                    <li> Transfer the beef and the sauce from the pan into a pot. </li>
+                    <li> Add in one cup of cold water and cover the pot. Let it cook on medium low heat until water boils. </li>
+                    <li> Continue to add cold water one cup at a time, waiting for the water in the pot to boil before adding another cup. Keep lid closed while waiting for the water to boil. </li>
+                    <li> Once the pot is half full, add in the tomatoes, star anise, and scallions.  </li>
+                    <li> Continue to add cold water using the same process of waiting for the water in the pot to boil before adding another cup. </li>
+                    <li> Once the pot is full, turn to low heat and keep covered. Let it cook for about 30 minutes. </li>
+                    <li> Prepare your favorite noodles to pair with the soup and enjoy. </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Side Column (right) -->
+        <div class="column side">
+            <!-- Recipe List -->
+            <div class="sticky_side">
+                <!-- Search Bar -->
+                <div class="searchbar">
+                    <input id="inputSearch" type="text" name="searchBar" placeholder="Search..." onkeyup="search()">
+                </div>
+                <!-- Recipe List -->
+                <p class="list_heading"> Pasta & Noodles Recipe List </p>
+                <div class="recipe_list">
+                    <p class="sub_cat"> Pasta </p>
+                    <p class="list"> <a href="#caprese_chicken_pasta"> Caprese Chicken Pasta </a></p>
+                    <p class="list"> <a href="#mushroom_tomato_sauce"> Mushroom Tomato Sauce </a></p>
+                    <br>
+                    <p class="sub_cat"> Noodles </p>
+                    <p class="list"> <a href="#black_bean_noodles">Black Bean Noodles </a></p>
+                    <p class="list"> <a href="#beef_noodle_soup">Taiwanese Beef Noodle Soup </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="to_top" href="#top_page">  &#8593; </a>
+
+    <!-- Footer -->
+	<footer>
+		<p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> by Kristi Yang | <a href="credit.html"> Credits Page </a></p>
+	</footer>
+</body>
+</html>

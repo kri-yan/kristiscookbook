@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/blog_home.css">
+    <script src="javascript/blogSearch.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">  
+	<title> Kristi's Cookbook | Blog </title>
+</head>
+<body>
+	<!-- Header -->
+	<header id="top_page">
+        <br>
+	</header>
+	
+	<!-- Nav -->
+	<div id="top">
+        <a href="index.html"><img src="images/small_logo.jpg" alt="Kristi's Cookbook"></a>
+	<nav>
+    <div class="decor_bar">
+        <br>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html"> About </a>
+        <a href="resources.html">Resources</a>
+        <div class="dropdown">
+            <a href="all_recipes.html">Recipes</a>
+            <div class="categories">
+                <a href="breakfast.html">Breakfast</a>
+                <a href="desserts.html">Desserts</a>
+                <a href="drinks.html">Drinks</a>
+                <a href="meat.html">Meat & Tofu</a>
+                <a href="pasta.html">Pasta & Noodles</a>
+                <a href="seafood.html">Seafood</a>
+                <a href="soup.html">Soups</a>
+                <a href="snacks.html">Snacks</a>
+                <a href="vegetables.html">Vegetables</a>
+            </div>
+        </div>
+        <a href="blog.html"> Blog </a>
+    </div>
+	</nav>
+    </div>
+    <div class="decor_bar">
+        <br>
+    </div>
+    <!-- Begin Content -->
+    <div class="row">
+    <!-- Mobile Nav -->
+    <button id="bttnMobileNav" onclick="openMobile()"> <span></span><span></span><span></span> </button>
+    <div id="mobileNav">
+        <button id="bttnMobileClose" onclick="closeMobile()"> &#10006; </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><button onclick="mobiledrop()"> Recipes&#9662; </button></li>
+                <ul id="mobileCat">
+                    <li><a href="all_recipes.html">Recipe Index</a></li>
+                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="desserts.html">Desserts</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                    <li><a href="meat.html">Meat & Tofu</a></li>
+                    <li><a href="pasta.html">Pasta & Noodles</a></li>
+                    <li><a href="seafood.html">Seafood</a></li>
+                    <li><a href="soup.html">Soups</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                </ul>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+        <!-- Main Column (left) -->
+        <div class="column main">
+        <!-- Pop-Out Menu for Mobile -->
+        <button id="popfilter" onclick="showMenu()"> Filter </button>
+        <!-- Title -->
+        <h1 id="head" class="subheading"> Blog Posts </h1>
+        <!-- Caffeine in Coffee-->
+        <a id="caffeine-coffee" href="blog-posts/caffeine-coffee.html">
+            <div class="post">
+                <div class="image">
+                    <img src="images/blog/coffee.jpg">
+                </div>
+                <div class="text">
+                    <p class="title"> How Caffeine in Coffee Works </p>
+                    <p class="date"> August 4, 2020 </p>
+                    <p class="desc"> One innocent cup of coffee became two which became three, which became one too many. So I decided to understand how caffeine works to make some neccessary changes to my life  &hellip;</p>
+                </div>
+            </div>
+            </a>
+            <!-- Whisking Egg Whites -->
+            <a id="whisking-egg-whites" href="blog-posts/whisking-egg-whites.html">
+                <div class="post">
+                    <div class="image">
+                        <img src="images/blog/whisk_egg.jpg">
+                    </div>
+                    <div class="text">
+                        <p class="title"> Why Egg Whites Demand Clean Bowls for Whisking </p>
+                        <p class="date"> June 8, 2020 </p>
+                        <p class="desc"> A small act of laziness caused a frustrating attempt to turn egg whites into firm peaks. And so I began my investigation into the science behind whisking egg whites &hellip;</p>
+                    </div>
+                </div>
+            </a>
+            <!-- Blog Post #3 -->
+            <a id="checking-oven" href="#">
+                <div class="post">
+                    <div class="image">
+                        <img src="images/blog/whisk_egg.jpg">
+                    </div>
+                    <div class="text">
+                        <p class="title"> Oven lights are better than opening the oven </p>
+                        <p class="date">May 8, 2020 </p>
+                        <p class="desc"> A small act of laziness caused a frustrating attempt to turn egg whites into firm peaks. And so I began my investigation into the science behind egg whites &hellip;</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Side Column (right) -->
+        <div class="column side">
+            <!-- Close Menu for Mobile -->
+            <div class="bttnbox">
+                <button id="close" onclick="closeMenu()"> &#10006; </button>
+            </div>
+            <!-- Title -->
+            <p class="heading"> Search for Posts </p>
+            <!-- Search Bar -->
+            <div class="searchbar">
+                <input id="inputSearch" type="text" name="searchBar" placeholder="Search..." onkeypress="if(event.keyCode == 13) search()">
+                <button type="button" id="bttnSearch" onclick="search()"> <img id=iconSearch src="images/icons/search-icon.jpg"> </button>
+            </div>
+            <div class="searchbttns">
+                <button type="button" id="bttnClear" onclick="clearInput()"> Clear </button>
+                <button type="button" id="bttnShow" onclick="showAll()"> Show All </button>
+            </div>
+            <!-- Sub-Title -->
+            <p id="subhead" class="heading"> Sort By </p>
+            <div class="sort">
+                <select id="sortby" name="sorting">
+                    <option selected="selected" value="default"> Sort By ...</option>
+                    <option value="newest"> Newest to Oldest </option>
+                    <option value="oldest"> Oldest to Newest</option>
+                    <option value="atoz"> A to Z </option>
+                    <option value="ztoa"> Z to A </option>
+                </select>
+                <button type="button" id="bttnSort" onclick="sortby()"> Sort </button>
+            </div>
+        </div>
+    </div>
+    <!-- Back to Top-->
+    <a class="to_top" href="#top_page">  &#8593; </a>
+    <!-- Footer -->
+	<footer>
+		<p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> by Kristi Yang | <a href="credit.html"> Credits Page </a></p>
+	</footer>
+</body>
+</html>

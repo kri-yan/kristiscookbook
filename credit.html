@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/credits.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet"> 
+    <!-- Javascript --> 
+    <script src="javascript/mobileNav.js"></script>
+	<title> Kristi's Cookbook | Credits Page </title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="top_page">
+        <br>
+    </header>
+    
+    <!-- Nav -->
+    <div id="top">
+        <a href="index.html"> <img src="images/small_logo.jpg" alt="Kristi's Cookbook"></a>
+    <nav>
+    <div class="decor_bar">
+        <br>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html"> About </a>
+        <a href="resources.html">Resources</a>
+        <div class="dropdown">
+            <a href="all_recipes.html">Recipes</a> 
+            <div class="categories">
+                <a href="breakfast.html"> Breakfast </a>
+                <a href="desserts.html">Desserts</a>
+                <a href="drinks.html"> Drinks </a>
+                <a href="meat.html">Meat & Tofu </a>
+                <a href="pasta.html">Pasta & Noodles</a>
+                <a href="seafood.html"> Seafood </a>
+                <a href="soup.html"> Soups</a>
+                <a href="snacks.html">Snacks</a>
+                <a href="vegetables.html"> Vegetables</a>
+            </div>
+        </div>
+        <a href="blog.html"> Blog </a>
+    </div>
+    </nav>
+    </div>
+    <div class="decor_bar">
+        <br>
+    </div>
+
+    <!-- Body -->
+    <!-- Mobile Nav -->
+    <button id="bttnMobileNav" onclick="openMobile()"> <span></span><span></span><span></span> </button>
+    <div id="mobileNav">
+        <button id="bttnMobileClose" onclick="closeMobile()"> &#10006; </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><button onclick="mobiledrop()"> Recipes&#9662; </button></li>
+                <ul id="mobileCat">
+                    <li><a href="all_recipes.html">Recipe Index</a></li>
+                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="desserts.html">Desserts</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                    <li><a href="meat.html">Meat & Tofu</a></li>
+                    <li><a href="pasta.html">Pasta & Noodles</a></li>
+                    <li><a href="seafood.html">Seafood</a></li>
+                    <li><a href="soup.html">Soups</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                </ul>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+    <div class="outside">
+    <div class="topheading">
+        <p class="subheading title"> Credits Page </p>
+        <p class="description"> Giving Credit Where Credit's Due </p>
+    </div>
+    <div class="content">
+        <p class="statement"> All fonts credited to <a href="https://developers.google.com/fonts" target="_blank"> Google Fonts </a> </p>
+        <p class="statement"> All images except those used in the blog are credited to Kristi Yang and Rachel Yang </p>
+        <p class="statement"> Web page design and creation is credited to Kristi Yang </p>
+        <p class="statement"> Images from blog posts and blog are from <a href="https://unsplash.com/" target="_blank"> Unsplash </a></p>
+        <img src="images/icons/small_whisk.jpg">
+    </div>
+    </div>
+
+    <!-- Footer -->
+	<footer>
+		<p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> by Kristi Yang | <a href="credit.html"> Credits Page </a></p>
+	</footer>
+</body>
+</html>

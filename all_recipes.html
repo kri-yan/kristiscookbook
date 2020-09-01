@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/recipe_index.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">  
+    <!-- Javascript -->
+    <script src="javascript/recipeIndex.js"></script>
+	<title> Kristi's Cookbook | Recipe Index </title>
+</head>
+<body>
+	<!-- Header -->
+	<header id="top_page">
+        <br>
+	</header>
+	
+	<!-- Nav -->
+	<div id="top">
+        <img src="images/small_logo.jpg" alt="Kristi's Cookbook">
+	<nav>
+    <div class="decor_bar">
+        <br>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html"> About </a>
+        <a href="resources.html">Resources</a>
+        <div class="dropdown">
+            <a href="all_recipes.html">Recipes</a> 
+            <div class="categories">
+                <a href="breakfast.html"> Breakfast </a>
+                <a href="desserts.html">Desserts</a>
+                <a href="drinks.html"> Drinks </a>
+                <a href="meat.html">Meat & Tofu </a>
+                <a href="pasta.html">Pasta & Noodles</a>
+                <a href="seafood.html"> Seafood </a>
+                <a href="soup.html"> Soups</a>
+                <a href="snacks.html">Snacks</a>
+                <a href="vegetables.html"> Vegetables</a>
+            </div>
+        </div>
+        <a href="blog.html"> Blog </a>
+    </div>
+	</nav>
+    </div>
+    <div class="decor_bar">
+        <br>
+    </div>
+
+    <!-- Body -->
+    <div class="single">
+    <!-- Mobile Nav -->
+    <button id="bttnMobileNav" onclick="openMobile()"> <span></span><span></span><span></span> </button>
+    <div id="mobileNav">
+        <button id="bttnMobileClose" onclick="closeMobile()"> &#10006; </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><button onclick="mobiledrop()"> Recipes&#9662; </button></li>
+                <ul id="mobileCat">
+                    <li><a href="all_recipes.html">Recipe Index</a></li>
+                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="desserts.html">Desserts</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                    <li><a href="meat.html">Meat & Tofu</a></li>
+                    <li><a href="pasta.html">Pasta & Noodles</a></li>
+                    <li><a href="seafood.html">Seafood</a></li>
+                    <li><a href="soup.html">Soups</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                </ul>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+        <!-- Title of Page -->
+        <h1 class="title heading"> Recipe Index </h1>
+        <p class="description"> Search for any recipe on Kristi's Cookbook! </p>
+        <!-- Search Bar -->
+        <div class="searchbar">
+            <input id="inputSearch" type="text" name="searchBar" placeholder="Search..." onkeyup="search()">
+        </div>
+    </div>
+    <div id="recipe_list">
+        <!-- First Row (Breakfast, Desserts, Drinks) -->
+        <div class="row">
+            <!-- Breakfast -->
+            <div class="column one">
+                <div class="section" id="breakfast">
+                    <h1 class="cat subheading"> <a href="breakfast.html"> Breakfast </a> </h1>
+                        <p class="list"> <a href="breakfast.html#biscuits"> Biscuits </a></p>
+                        <p class="list"> <a href="breakfast.html#cherry_jam"> Cherry Jam </a></p>
+                        <p class="list"> <a href="breakfast.html#chocolate_chip_muffins"> Chocolate Chip Muffins </a></p>
+                        <p class="list"> <a href="breakfast.html#french_toast"> French Toast </a></p>
+                        <p class="list"> <a href="breakfast.html#peach_preserves"> Peach Preserves </a></p>
+                        <p class="list"> <a href="breakfast.html#raspberry_jam"> Raspberry Jam </a></p>
+                </div>
+            </div>
+            <!-- Desserts -->
+            <div class="column two">
+                <div class="section" id="desserts">
+                    <h1 class="cat subheading"> <a href="desserts.html"> Desserts </a></h1>
+                        <p class="list"> <a href="desserts.html#chocolate_chip_cookies"> Chocolate Chip Cookies </a></p>
+                        <p class="list"> <a href="desserts.html#cinnamon_sugar_cookies"> Cinnamon Sugar Cookies </a></p>
+                        <p class="list"> <a href="desserts.html#matcha_shortbread">  Matcha White Chocolate Shortbread </a> </p>
+                        <p class="list"> <a href="desserts.html#oatmeal_chocolate_chip_cookies"> Oatmeal Chocolate Chip Cookies </a></p> 
+                        <p class="list"> <a href="desserts.html#peach_crumb_bar"> Peach Crumb Bar </a></p>
+                        <p class="list"> <a href="desserts.html#snickerdoodle">Snickerdoodle Cookies </a></p>
+                        <p class="list"> <a href="desserts.html#lazy_apple_pie"> Lazy Apple Pie </a></p>
+                        <p class="list"> <a href="desserts.html#tiramisu"> Tiramisu </a></p>
+                </div>
+            </div>
+            <!-- Drinks -->
+            <div class="column three">
+                <div class="section" id="drinks">
+                    <h1 class="cat subheading"> <a href="drinks.html"> Drinks </a></h1>
+                        <p class="list"> <a href="drinks.html#aloe_green_tea"> Aloe Green Tea </a></p>
+                        <p class="list"> <a href="drinks.html#matcha_latte"> Matcha Latte </a></p>
+                        <p class="list"> <a href="drinks.html#nectarine_iced_tea"> Nectarine Iced Tea </a></p>
+                        <p class="list"> <a href="drinks.html#sour_lemonade"> Sour Lemonade </a></p>
+                        <p class="list"> <a href="drinks.html#strawberry_lemonade"> Strawberry Lemonade </a></p>
+                        <p class="list"> <a href="drinks.html#strawberry_limeade"> Strawberry Limeade </a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Second Row (Meat, Pasta, Seafood) -->
+        <div id="temp" class="row">
+            <!-- Meat and Tofu -->
+            <div class="column one">
+                <div class="section" id="meat">
+                    <h1 class="cat subheading"> <a href="meat.html"> Meat & Tofu </a></h1>
+                    <p class="list"> <a href="meat.html#kimchi_beef"> Kimchi Beef </a></p>
+                    <p class="list"> <a href="meat.html#balsamic_chicken"> Balsamic Chicken </a></p>
+                    <p class="list"> <a href="meat.html#chicken_okra_stirfry"> Chicken & Okra Stir Fry </a></p>
+                    <p class="list"> <a href="meat.html#japanese_chicken_curry"> Japanese Chicken Curry </a></p>
+                    <p class="list"> <a href="meat.html#kimchi_chicken_fried_rice"> Kimchi Chicken Fried Rice </a></p>
+                    <p class="list"> <a href="meat.html#chicken_channa_masala"> Shortcut Chicken Channa Masala </a></p>
+                    <p class="list"> <a href="meat.html#herb_chicken_marinade"> Herb Chicken Marinade </a></p>
+                    <p class="list"> <a href="meat.html#korean_spicy_chicken_marinade"> Korean Spicy Chicken Marinade </a></p>
+                    <p class="list"> <a href="meat.html#soy_sauce_chicken"> Soy Sauce Chicken Marinade </a></p>
+                    <p class="list"> <a href="meat.html#pork_roll"> Mushroom & Scallion Pork Rolls </a></p>
+                    <p class="list"> <a href="meat.html#mapo_tofu"> Mapo Tofu </a></p>
+                    <p class="list"> <a href="meat.html#soy_sauce_chicken"> Soy Sauce Chicken Marinade </a></p>
+                    <p class="list"> <a href="meat.html#sacha_pork"> Sa Cha Pork Marinade </a></p>
+                    <p class="list"> <a href="meat.html#soy_sauce_ground_pork"> Soy Sauce Ground Pork Marinade </a></p>
+                </div>
+            </div>
+            <!-- Pasta & Noodles -->
+            <div class="column two">
+                <div class="section" id="pasta">
+                    <h1 class="cat subheading"> <a href="pasta.html"> Pasta & Noodles </a></h1>
+                    <p class="list"> <a href="pasta.html#caprese_chicken_pasta"> Caprese Chicken Pasta </a></p>
+                    <p class="list"> <a href="pasta.html#mushroom_tomato_sauce"> Mushroom Tomato Sauce </a></p>
+                    <p class="list"> <a href="pasta.html#black_bean_noodles"> Black Bean Noodles </a></p>
+                    <p class="list"> <a href="pasta.html#beef_noodle_soup"> Taiwanese Beef Noodle Soup </a></p>
+                </div>
+            </div>
+            <!-- Seafood -->
+            <div class="column three">
+                <div class="section" id="seafood">
+                    <h1 class="cat subheading"> <a href="seafood"> Seafood </a> </h1>
+                        <p class="list"> <a href="seafood.html#chinese_tomato_shrimp"> Chinese Tomato Shrimp </a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Third Row (Soup, Snacks, Vegetables) -->
+        <div class="row">
+            <!-- Soup -->
+            <div class="column one">
+                <div class="section" id="soup">
+                    <h1 class="cat subheading"> <a href="soup.html"> Soup </a> </h1>
+                        <p class="list"> <a href="soup.html#cauliflower_soup"> Cauliflower Soup </a></p>
+                        <p class="list"> <a href="soup.html#chicken_noodle_soup"> Chicken Noodle Soup </a></p>
+                        <!-- <p class="list"> <a href="soup.html#clam_chowder"> Clam Chowder </a></p> -->
+                        <p class="list"> <a href="soup.html#chili"> Slow Cooker Chili </a></p>
+                </div>
+            </div>
+            <!-- Snacks -->
+            <div class="column two">
+                <div class="section" id="snacks">
+                    <h1 class="cat subheading"> <a href="snacks"> Snacks </a> </h1>
+                        <p class="list"> <a href="snacks.html#salsa"> Salsa </a></p>
+                </div>
+            </div>
+            <!-- Vegetables -->
+            <div class="column three">
+                <div class="section" id="vegetables">
+                    <h1 class="cat subheading"> <a href="vegetables.html"> Vegetables </a> </h1>
+                        <p class="list"> <a href="vegetables.html#chinese_mushroom_medley"> Chinese Mushroom Medley </a></p>
+                        <p class="list"><a href="vegetables.html#garlic_cucumbers"> Garlic Cucumbers (Cold) </a></p>
+                        <p class="list"><a href="vegetables.html#herb_roasted_potatoes"> Herbes de Provence Roasted Potatoes </a></p>
+                        <p class="list"> <a href="vegetables.html#mashed_potatoes"> Mashed Potatoes </a></p>
+                        <p class="list"><a href="vegetables.html#roasted_brussel_sprouts"> Roasted Brussel Sprouts </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Back to Top -->
+    <a class="to_top" href="#top_page">  &#8593; </a>
+
+    <!-- Footer -->
+	<footer>
+		<p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> by Kristi Yang | <a href="credit.html"> Credits Page </a></p>
+	</footer>
+
+</body>
+</html>

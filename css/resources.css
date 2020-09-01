@@ -1,0 +1,154 @@
+/* COLOR SCHEME
+yellow = rgb(255, 230, 125)
+ligh yellow for background = rgba(255, 230, 125, 0.3)
+light blue for background = rgba(153, 204, 255, 0.4)
+blue = rgb(153, 204, 255)
+brown = rgb(208, 197, 166)
+dark brown for text = rgb(133, 125, 105)
+light brown background = rgba(208, 197, 166, 0.384)
+light gray = rgb(217, 217, 217)
+dark gray for text = rgb(175, 175, 175)
+cream = rgba(255, 253, 208, 0.35)
+
+IMAGES
+Food images for recipe desc & index formatted as 4:3 and height = 350
+Blog images have width = 425
+Resources icon images have formatted as 3:2 and height = 200
+*/
+
+*{font-family: 'Lato', sans-serif; margin:0;}
+.subheading{color: rgb(133, 125, 105); font-family: 'Rochester', cursive; letter-spacing: 0.02em;}
+.row{background-color: rgba(153, 204, 255, 0.4);}
+
+/* HEADER */
+header{background-color: rgb(208, 197, 166);}
+
+/* TOP LOGO */
+#top{height: 10%;}
+#top img{display: block; height: auto; margin-left: auto; margin-right: auto; margin-bottom: 1.5%;margin-top: 1%; max-width: 40%;}
+.decor_bar{background-color: rgb(217, 217, 217); clear: both; line-height: 20%; }
+
+/* NAV */
+nav{background-color: rgba(255, 230, 125, 0.2);}
+.navbar {display: flex; justify-content: center; padding-bottom: 0.5%; padding-top: 0.5%; text-align: center;} 
+nav a{color: rgb(133, 125, 105); display: block; font-size: 1.1rem; font-weight: bold; padding: 0 2.5%; text-decoration: none; text-transform: uppercase;}
+nav a:hover{color: rgb(153, 204, 255);}
+/* Subnav */
+.dropdown{padding: 0 2.5%;}
+.categories{background-color: white; border-color: rgb(217, 217, 217); border-style: solid; display: none; position: absolute; z-index: 1000;}
+.categories a{color: rgb(208, 197, 166); display: block; float: none; font-size: 1.1rem; font-weight: bold; padding-top: 1%; padding-bottom: 1%; text-align: left; text-decoration: none;}
+.dropdown:hover .categories{display: block;} 
+
+/* BACK TO TOP */
+.to_top{background-color: rgba(255, 230, 125, 0.3); border-color: rgb(217, 217, 217); border-radius: 50%; border-style: solid; border-width: thin; bottom: 6%; box-shadow: 0 4px 8px 0 gray, 0 2px 10px 0 gray; color: rgb(133, 125, 105); display: none; font-size: 2.5vw; font-weight: bold; padding: 0.25% 1.5% 1%; position: fixed; right: 12%; text-decoration: none; z-index: 1000;}
+.to_top:hover{opacity: 0.7;}
+
+/* FOOTER */
+footer{background-color: rgb(208, 197, 166); padding: 0.25% 0; text-align: center;}
+footer a{color: black; text-decoration: none;}
+
+/* TITLE OF PAGE */
+.title{font-size: 3rem; padding-top: 1.5%; text-align: center;}
+.description{color: rgb(133, 125, 105); font-size: 1.1rem; margin-top: 0.5%; text-align: center;}
+.single{border-color: rgba(153, 204, 255, 0.4); border-style: none solid; border-width: 0 4vw;} 
+
+/*2 COLUMN LAYOUT */
+.row{display: flex;}
+.column{background-color: white; display: flex; justify-content: center; padding: 1.5% 0 3%; width: 31%;}
+.one{border-color: rgba(153, 204, 255, 0.4); border-left-style: solid; border-left-width: 4vw;}
+.three{border-color: rgba(153, 204, 255, 0.4); border-right-style: solid; border-right-width: 4vw;}
+.row:after{clear:both;}
+
+/* FOR DESIGN ONLY */
+/* .row{border-style: solid; border-color: green;}
+.column{border-style: solid;}
+.one{border-color: blue;}
+.two{border-color: red;}
+.three{border-color: purple;} */
+
+/* BOX FOR RESOURCE DESCRIPTION */
+.link{color: black; text-decoration: none;}
+.name{font-size: 2rem; text-align: center;}
+.icon{display: block; margin: 0 auto 3%; max-width: 90%;}
+.box ul{margin-top: 3%;}
+.box li{padding-top: 1%;}
+
+/* BOX & SHADOW-POP OUT FEATURE */
+.box{border-color: rgb(208, 197, 166); border-style: solid; padding: 5%; width: 80%;}
+.box:hover{border-color: rgba(153, 204, 255, 0.4); box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 1.4rem 0 rgba(0, 0, 0, 0.19);}
+
+/* TEMP FOR COMING SOON */
+.temp{padding-top: 3%; text-align: center;}
+
+
+/* HAMBURGER MENU */
+/* menu button */
+#bttnMobileNav{background-color: white; border-style: none; display: none; margin: 0.75% 0; position: absolute; right: 5%; width: 10%;}
+#bttnMobileNav:hover{cursor: pointer; opacity: 0.7;}
+#bttnMobileNav span{background-color: rgb(208, 197, 166); display: block; margin: 15% 0; padding: 8%;}
+/* close menu button */
+#bttnMobileClose{background-color: white; border-style: none; color: rgb(208, 197, 166); font-size: 1.5rem; font-weight: bold; left: 38%; margin-top: 3%; position: relative; text-align: center; width: 20%;}
+#bttnMobileClose:hover{cursor: pointer; opacity: 0.7;}
+/* mobile nav */
+#mobileNav{background-color: white; border-style: solid; display: none; margin-top: 0.5%; padding-bottom: 2%; position: absolute; right: 2%; width: 30%; z-index: 100;}
+#mobileNav button{background-color: white; border-style: none; color: rgb(133, 125, 105);font-size: 3vw; font-weight: bold; text-transform: uppercase;}
+#mobileNav button:hover{color: rgb(153, 204, 255); cursor: pointer;}
+#mobileNav ul{padding: 1% 2.5%; text-align: center;}
+#mobileNav li{list-style-type: none; padding-bottom: 2%;}
+#mobileNav a{color: rgb(133, 125, 105); font-size: 3vw; font-weight: bold; text-decoration: none; text-transform: uppercase;}
+#mobileNav a:hover{color: rgb(153, 204, 255);}
+#mobileCat{display: none;}
+#mobileCat a{font-size: 2.25vw; text-align: left;}
+
+/* SMALL WINDOW + MOBILE DESIGN */
+@media only screen and (max-width: 800px){
+    /* TOP LOGO */
+    #top img{max-width: 55%;}
+
+    /* COLUMNS */
+    .row{display: block;}
+    .column{border-color: rgba(153, 204, 255, 0.4); border-style: none solid; border-width: 0 4vw; margin-left: 0; margin-right: 0; width: 91.8%;}
+
+    /* FONT SIZE */
+    .subheading{font-size: 5.5vw;}
+    .description{font-size: 2.5vw;}
+    .icon{width: 30%;}
+
+    /* BOX */
+    .box{width: 75%;}
+    .box li, .desc, .temp{font-size: 2.5vw;}
+
+    /* BACK TO TOP */
+    .to_top{display: block; font-size: 3vw; padding: 1% 2.5% 1.5%; right: 0.5%;}
+
+    /* FOOTER */
+    footer{font-size: 1.5vw;}
+}
+
+
+/* MOBILE ONLY DESIGN */
+@media only screen and (max-width: 475px){
+
+    /* body{background-color: yellow;} */
+
+    /* HAMBURGER MENU */
+    nav{display: none;}
+    #bttnMobileNav{display: block;}
+    #mobileNav{width: 40%;}
+    #mobileNav a, #mobileNav button{font-size: 4.5vw;}
+    #mobileCat a{font-size: 3vw;}
+
+    /* FONT SIZE */
+    .subheading{font-size: 6.5vw;}
+    .description{font-size: 3.75vw;}
+
+    /* BOX */
+    .box li, .desc, .temp{font-size: 3.5vw;}
+    .box ul{padding-left: 10%;}   
+
+    /* BACK TO TOP */
+    .to_top{font-size: 5.5vw; padding: 0.5% 3% 1%; right: 0.5vw;}
+
+    /* FOOTER */
+    footer{font-size: 2.5vw;}
+}

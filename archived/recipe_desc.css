@@ -1,0 +1,85 @@
+/* COLOR SCHEME
+yellow = rgb(255, 230, 125)
+ligh yellow for background = rgba(255, 230, 125, 0.3)
+light blue for background = rgba(153, 204, 255, 0.4)
+blue = rgb(153, 204, 255)
+brown = rgb(208, 197, 166)
+dark brown for text = rgb(133, 125, 105)
+light brown background = rgba(208, 197, 166, 0.384)
+light gray = rgb(217, 217, 217)
+dark gray for text = rgb(175, 175, 175)
+
+IMAGES
+Food images for recipe desc & index formatted as 4:3 and height = 350
+Blog images have width = 425
+*/
+
+*{font-family: 'Lato', sans-serif; margin:0;}
+.subheading{color: rgb(133, 125, 105); font-family: 'Rochester', cursive; font-size: 2.5rem; letter-spacing: 0.02em;}
+.row{background-color: rgba(153, 204, 255, 0.4);}
+
+/* HEADER */
+header{background-color: rgb(208, 197, 166);}
+
+/* TOP LOGO */
+#top{height: 10%;}
+#top img{display: block; height: auto; margin-left: auto; margin-right: auto; margin-bottom: 1.5%;margin-top: 1%; max-width: 30%; scale:(1.0);}
+.decor_bar{background-color: rgb(217, 217, 217); clear: both; line-height: 20%;}
+
+/* NAV */
+nav{background-color: rgba(255, 230, 125, 0.2);}
+.navbar {margin-left: auto; margin-right: auto; max-width: 48%; overflow: hidden; padding-bottom: 0.5%; padding-top: 0.5%;
+                text-align: center;} 
+nav a{color: rgb(133, 125, 105); float: left; font-size: 1.1rem; font-weight: bold; margin-left: 4%; margin-right: 4%; text-decoration: none; 
+        text-transform: uppercase;}
+nav a:hover{color: rgb(153, 204, 255);}
+/* Subnav */
+.dropdown{float: left; margin-left: 4%; margin-right: 4%; overflow: hidden; padding-right:1%;}
+.categories{background-color: white; border-color: rgb(217, 217, 217); border-style: solid; display: none; position: absolute; 
+                top: 34.5%; width: 15%; z-index: 1000;}
+.categories a{color: rgb(208, 197, 166); display: block; float: none; font-size: 1.1rem; font-weight: bold; padding-top: 1%; 
+                padding-bottom: 1%; text-align: left; text-decoration: none;}
+.dropdown:hover .categories{display: block;} 
+
+/* BACK TO TOP */
+.to_top{background-color: rgb(255, 240, 181); border-color: rgb(217, 217, 217); border-radius: 50%; border-style: ridge; border-width: thin; 
+        bottom: 6%; box-shadow: 0 4px 8px 0 gray, 0 2px 10px 0 gray; color: rgb(133, 125, 105); font-size: 2.5vw; font-weight: bold; padding: 0.25% 1.5% 1%; 
+        position: fixed; right: 1.8%; text-decoration: none; z-index: 1000;}
+.to_top:hover{opacity: 0.7;}
+
+/*2 COLUMN LAYOUT */
+.row{display: flex;}
+.column{background-color: white; float: left; padding: 1.5% 1%;}
+.main{margin-left: 4%; padding-left: 3%; width: 46%;}
+.side{margin-right: 4%; padding-right: 3%; width: 46%;}
+.row:after{clear:both;}
+
+/* FOR DESIGN ONLY */
+/* .row{border-style: solid; border-color: green;}
+.column{border-style: solid;}
+.main{border-color: blue;}
+.side{border-color: red;} */
+
+/*CATEGORIES */
+.title{border-color: rgba(153, 204, 255, 0.4); border-left-style: solid; border-right-style: solid; border-width: 4vw; 
+        font-family: 'Rochester', cursive; font-size: 2.5rem; letter-spacing: 0.02em; padding-left: 3%; padding-top: 1%;}
+
+/* IMAGE (FIRST LAYER) */
+.container{background-color: rgba(255, 230, 125, 0.3); box-shadow: 0 0.3em 0.75em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19); height: 60vh; margin-bottom: 5%; margin-left: auto; margin-right: auto; margin-top: 1%; max-width: 90%; position: relative;}
+div.container .cat_name{background-color: rgba(255, 230, 125, 0.5); bottom: 0; color: rgb(133, 125, 105); font-size: 1.1rem; font-weight: bold; padding: 3% 8%; position: absolute; text-align: center; text-transform: uppercase; width: 84%}
+.image{display: flex; justify-content: center;}
+div.container img{backface-visibility: hidden; display: block; margin: auto; max-height: 86%; max-width: 100%; position: absolute; scale:(1.0); transition: 0.5s ease;}
+
+/* DESCRIPTION (SECOND LAYER) */
+.info_box{align-items: center; background-color: rgb(217, 217, 217); display: flex; height: 86%; overflow: hidden; opacity: 0; position: absolute; text-align: center; transition: 0.5s ease; width: 100%;}
+.desc{color: black; font-size: 1.1rem; font-weight: bold; height: 50%; line-height: 150%; padding: 0 7%;}
+
+/* FADE IN EFFECT */
+.container:hover img{opacity: 0.12;}
+.container:hover .info_box{opacity: 0.5;}
+
+/* FOOTER */
+footer{background-color: rgb(208, 197, 166); padding: 0.25% 0; text-align: center;}
+footer a{color: black; text-decoration: none;}
+
+

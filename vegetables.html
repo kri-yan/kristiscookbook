@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/recipe.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <!-- Javascript -->
+    <script src="javascript/recipeSearch.js"></script>
+	<title> Kristi's Cookbook | Vegetables </title>
+</head>
+<body onload="loadRecipes()">
+	<!-- Header -->
+	<header id="top_page">
+        <br>
+	</header>
+	
+	<!-- Nav -->
+	<div id="top">
+        <a href="index.html"> <img src="images/small_logo.jpg" alt="Kristi's Cookbook"></a>
+	<nav>
+    <div class="decor_bar">
+        <br>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html"> About </a>
+        <a href="resources.html">Resources</a>
+        <div class="dropdown">
+            <a href="all_recipes.html">Recipes</a>
+            <div class="categories">
+                <a href="breakfast.html"> Breakfast </a>
+                <a href="desserts.html">Desserts</a>
+                <a href="drinks.html"> Drinks </a>
+                <a href="meat.html">Meat & Tofu </a>
+                <a href="pasta.html">Pasta & Noodles</a>
+                <a href="seafood.html"> Seafood </a>
+                <a href="soup.html"> Soups</a>
+                <a href="snacks.html">Snacks</a>
+                <a href="vegetables.html"> Vegetables</a>
+            </div>
+        </div>
+        <a href="blog.html"> Blog </a>
+    </div>
+	</nav>
+    </div>
+    <div class="decor_bar">
+        <br>
+    </div>
+
+    <!-- Begin Content -->
+    <!-- Mobile Nav -->
+    <button id="bttnMobileNav" onclick="openMobile()"> <span></span><span></span><span></span> </button>
+    <div id="mobileNav">
+        <button id="bttnMobileClose" onclick="closeMobile()"> &#10006; </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><button onclick="mobiledrop()"> Recipes&#9662; </button></li>
+                <ul id="mobileCat">
+                    <li><a href="all_recipes.html">Recipe Index</a></li>
+                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="desserts.html">Desserts</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                    <li><a href="meat.html">Meat & Tofu</a></li>
+                    <li><a href="pasta.html">Pasta & Noodles</a></li>
+                    <li><a href="seafood.html">Seafood</a></li>
+                    <li><a href="soup.html">Soups</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                </ul>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <!-- Main Column (left) -->
+        <div class="column main">
+            <!-- Mobile Search Bar -->
+            <div class="mobile">
+                <img id="mobileIcon" src="images/icons/search-icon.jpg">
+                <input id="mobileSearch" list="recipeList" name="mobileSearch" placeholder="Search..." oninput="mobileSearch()">
+                <datalist id="recipeList"></datalist>
+            </div>
+            <!-- Chinese Mushroom Medley -->
+            <div class="recipe" id="chinese_mushroom_medley">
+                <p class="name"> Chinese Mushroom Medley </p>
+                <p class="serving"> Serving Size: 5-7 servings </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> 3.5 oz of shiitaki mushrooms </li>
+                    <li> 16 oz of king oyster mushrooms </li>
+                    <li> 3.5 oz of brown beech mushrooms (shimeji) </li>
+                </ul>
+                <p class="sub_lbl"> Sauce </p>
+                <ul class="ingredients">
+                    <li> 1 tbsp of soy paste (醬油膏) </li>
+                    <li> 1 tbsp of rice wine (米酒) </li>
+                    <li> 1 tbsp of Sa Cha sauce (沙茶醬) </li>
+                    <li> 1 scallion </li>
+                    <li> 3 cloves of garlic </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step: </p>
+                <ol class="steps">
+                    <li> Chop the scallions into 1" length. </li>
+                    <li> In a bowl, mix together the soy paste, rice wine, sa cha sauce, and scallions. </li>
+                    <li> Cut and wash the shiitaki mushrooms into quarters. </li>
+                    <li> Wash and chop up the king oyster mushrooms into rectangles. </li>
+                    <li> Wash the beech mushroms and remove the bottom. </li>
+                    <li> Dice up the garlic. </li>
+                    <li> In a pan, add about a spatula worth of oil. </li>
+                    <li> After the oil is warmed, add in the garlic. </li>
+                    <li> Once the garlic smells comes out, add in the shiitaki and king oyster mushrooms. </li>
+                    <li> Cover and let it sit for about 1 minute. </li>
+                    <li> Add in the sauce. </li>
+                    <li> Stir and cover for about 1 minute. </li>
+                    <li> Add in the beech mushrooms. </li>
+                    <li> Stir and let it cook for about 1 minute. </li>
+                    <li> Turn off the heat and enjoy! </li>
+                </ol>
+            </div>
+            <!-- Garlic Cucumbers (Cold) -->
+            <div class="recipe" id="garlic_cucumbers">
+                <p class="name"> Garlic Cucumbers (Cold) </p>
+                <p class="serving"> Serving Size: &frac12; qt </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> 1&frac12; lbs of mini cucumbers </li>
+                    <li> 10 cloves of garlic </li>
+                    <li> 2 tsp of salt </li>
+                    <li> &frac12; tsp of sugar </li>
+                    <li> &frac12; tsp of garlic powder </li>
+                    <li> 1 tsp of Korean red pepper flakes </li>
+                    <li> &frac12; tbsp of chopped cilantro </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Slice the cucumbers crosswise into circles about &frac14;" thick and place into a container. </li>
+                    <li> Add in the salt and mix. </li>
+                    <li> Finely chop the garlic and then add into the cucumbers. </li>
+                    <li> Add in the cilantro, vinegar, sugar, red pepper flakes, and garlic powder. </li>
+                    <li> Cover the container and shake to mix the ingredients. </li>
+                    <li> Place in fridge and let it marinate overnight. </li>
+                    <li> Once marinated, serve cold. </li>
+                </ol>
+            </div>
+            <!-- Herbes de Provence Roasted Potatoes -->
+            <div class="recipe" id="herb_roasted_potatoes">
+                <p class="name"> Herbes de Provence Roasted Potatoes </p>
+                <p class="serving"> Serving Size: 3-5 servings </p>
+                <br>
+                <p class="lbl"> Ingredients </p> 
+                <ul class="ingredients">
+                    <li> &frac12; lb of potatoes </li>
+                    <li> &frac12; tsp of salt </li>
+                    <li> &frac12; tsp of black pepper </li>
+                    <li> &frac12; tsp of herbes de provence </li>
+                    <li> &frac12; tsp of garlic powder </li>
+                    <li> &frac12; tsp of paprika </li>
+                    <li> &frac12; tbsp of olive oil </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step</p>
+                <ol class="steps">
+                    <li> Dice the potatoes into 1" cubes and place into a bowl. </li>
+                    <li> Soak the potatoes in cold water for about 15-30 minutes. This will help the potatoes crisp up during baking. </li>
+                    <li> Drain the potatoes and make sure that there is as little water as possible left in the bowl. </li>
+                    <li> Add the salt, pepper, herbes, garlic powder, paprika, and olive oil into the bowl. </li>
+                    <li> Toss the potatoes until they are all covered in the seasoning. </li>
+                    <li> Preheat the oven to 400&deg;F. </li>
+                    <li> Place the potatoes into a baking pan, making sure that they are all exposed.</li>
+                    <li> Bake for 15 minutes, flip, and then bake for another 10 minutes. </li>
+                </ol>
+            </div>
+            <!-- Mashed Potatoes -->
+            <div class="recipe" id="mashed_potatoes">
+                <p class="name"> Mashed Potatoes </p>
+                <p class="serving"> Serving Size: about 1 qt</p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> 3 cups of diced Yukon Gold Potatoes (about 3-4 potatoes) </li>
+                    <li> &frac12; tsp of salt </li>
+                    <li> 4 tbsp of unsalted butter </li>
+                    <li> &frac14; cup of milk </li>
+                    <li> &frac12; tsp of black pepper </li>
+                    <li> &frac12; tsp of garlic powder </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step</p>
+                <ol class="steps">
+                    <li> Boil a pot of cold water with a pinch of salt. </li>
+                    <li> Dice the potatoes into 1" cubes. </li>
+                    <li> When the water is boiled, add in the potatoes. </li>
+                    <li> Let it cook on medium heat until the potatoes are soft. </li>
+                    <li> Drain the hot water. </li>
+                    <li> While the potatoes are still hot, add in the unsalted butter, milk, black pepper, garlic powder, and salt. </li> 
+                    <li> Mash and mix the potatoes to the desired texture. </li>
+                    <li> Serve as is or garnish with scallions, cheese, and/or bacon. </li> 
+                </ol>
+            </div>
+            <!-- Roasted Brussel Sprouts -->
+            <div class="recipe" id="roasted_brussel_sprouts">
+                <p class="name"> Roasted Brussel Sprouts </p>
+                <p class="serving"> Serving Size: 3-5 servings </p>
+                <br>
+                <p class="lbl"> Ingredients</p>
+                <ul class="ingredients">
+                    <li> 1 lb of brussel sprouts </li>
+                    <li> 1 tsp of salt </li>
+                    <li> &frac12; tsp of black pepper </li>
+                    <li> &frac12; tsp of garlic powder </li> 
+                    <li> 1 tbsp of olive oil </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p> 
+                <ol class="steps">
+                    <li> Wash the brussel sprouts and chop of the ends. </li>
+                    <li> Chop the brussel sprouts in half and place into a mixing bowl. </li>
+                    <li> Add salt, pepper, garlic powder, and olive oil into the mixing bowl. </li>
+                    <li> Mix until all the brussel sprouts are coated with the seasoning. </li>
+                    <li> Preheat the oven to 400&deg;F. </li>
+                    <li> Place the brussel sprouts in a baking pan. Make sure that they are even. </li>
+                    <li> Bake for 10 minutes, mix and flip them, and then bake for another 10 minutes. </li>
+                    <li> Let it cool and enjoy! </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Side Column (right) -->
+        <div class="column side">
+            <div class="sticky_side">
+                <!-- Search Bar -->
+                <div class="searchbar">
+                    <input id="inputSearch" type="text" name="searchBar" placeholder="Search..." onkeyup="search()">
+                </div>
+                <!-- Recipe List -->
+                <p class="list_heading"> Vegetables Recipe List </p>
+                <div class="recipe_list">
+                    <p class="list"> <a href="#chinese_mushroom_medley"> Chinese Mushroom Medley </a></p>
+                    <p class="list"> <a href="#garlic_cucumbers"> Garlic Cucumber (Cold) </a></p>
+                    <p class="list"> <a href="#herb_roasted_potatoes"> Herbes de Provence Roasted Potatoes </a></p>
+                    <p class="list"> <a href="#mashed_potatoes"> Mashed Potatoes </a></p>
+                    <p class="list"> <a href="#roasted_brussel_sprouts"> Roasted Brussel Sprouts </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="to_top" href="#top_page">  &#8593; </a>
+
+    <!-- Footer -->
+	<footer>
+		<p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> by Kristi Yang | <a href="credit.html"> Credits Page </a></p>
+	</footer>
+</body>
+</html>

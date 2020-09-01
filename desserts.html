@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/recipe.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <!-- Javascript -->  
+    <script src="javascript/recipeSearch.js"></script>
+	<title> Kristi's Cookbook | Desserts </title>
+</head>
+<body onload="loadRecipes()">
+	<!-- Header -->
+	<header id="top_page">
+        <br>
+	</header>
+	
+	<!-- Nav -->
+	<div id="top">
+        <a href="index.html"> <img src="images/small_logo.jpg" alt="Kristi's Cookbook"></a>
+	<nav>
+    <div class="decor_bar">
+        <br>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html"> About </a>
+        <a href="resources.html"> Resources</a>
+        <div class="dropdown">
+            <a href="all_recipes.html">Recipes</a>
+            <div class="categories">
+                <a href="breakfast.html"> Breakfast </a>
+                <a href="desserts.html">Desserts</a>
+                <a href="drinks.html"> Drinks </a>
+                <a href="meat.html">Meat & Tofu </a>
+                <a href="pasta.html">Pasta & Noodles</a>
+                <a href="seafood.html"> Seafood </a>
+                <a href="snacks.html">Snacks</a>
+                <a href="soup.html"> Soups</a>
+                <a href="vegetables.html"> Vegetables</a>
+            </div>
+        </div>
+        <a href="blog.html"> Blog </a>
+    </div>
+	</nav>
+    </div>
+    <div class="decor_bar">
+        <br>
+    </div>
+
+    <!-- Begin Content -->
+    <!-- Mobile Nav -->
+    <button id="bttnMobileNav" onclick="openMobile()"> <span></span><span></span><span></span> </button>
+    <div id="mobileNav">
+        <button id="bttnMobileClose" onclick="closeMobile()"> &#10006; </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><button onclick="mobiledrop()"> Recipes&#9662; </button></li>
+                <ul id="mobileCat">
+                    <li><a href="all_recipes.html">Recipe Index</a></li>
+                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="desserts.html">Desserts</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                    <li><a href="meat.html">Meat & Tofu</a></li>
+                    <li><a href="pasta.html">Pasta & Noodles</a></li>
+                    <li><a href="seafood.html">Seafood</a></li>
+                    <li><a href="soup.html">Soups</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                </ul>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <!-- Main Column (left) -->
+        <div class="column main">
+            <!-- Mobile Search Bar -->
+            <div class="mobile">
+                <img id="mobileIcon" src="images/icons/search-icon.jpg">
+                <input id="mobileSearch" list="recipeList" name="mobileSearch" placeholder="Search..." oninput="mobileSearch()">
+                <datalist id="recipeList"></datalist>
+            </div>
+            <!-- Chocolate Chip Cookies -->
+            <div class="recipe" id="chocolate_chip_cookies">
+                <p class="name"> Chocolate Chip Cookies </p>
+                <p class="serving"> Serving Size: cookies </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> 1 cup of butter </li>
+                    <li> &frac14; cup of white sugar </li>
+                    <li> 1 cup of brown sugar </li>
+                    <li> 2 tsp of vanilla extract </li>
+                    <li> 1 tsp of espresso powder </li>
+                    <li> 1 egg </li>
+                    <li> 1 egg yolk </li>
+                    <li> 1&frac12; cup of flour </li>
+                    <li> 1&frac12; tsp of salt </li>
+                    <li> 1 tsp of baking soda </li>
+                    <li> 1&frac12; cup of chocolate chips </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Melt the butter and let it cool. Make sure that the melted butter cools down before using or else it will melt the sugars instead of cream together. To speed up the cooling, place the melted butter in the fridge for 10-15 minutes. </li>
+                    <li> In a bowl, mix together the brown sugar, white sugar, vanilla extract, and espresso powder. </li>
+                    <li> Add in the cooled melted butter and cream until light and fluffy. </li>
+                    <li> Add in the egg and the egg yolk and mix until incorporated. </li>
+                    <li> In a separate bowl, mix together the flour, salt, and baking soda. </li>
+                    <li> A little add a time, add the dry ingredients into the wet ingredients. </li>
+                    <li> Using a spatuala or a spoon, fold in the chocolate chips. </li>
+                    <li> Cover and refrigerate for at least 4 hours. Best results if refrigerated overnight. </li>
+                    <li> Preheat the oven to 350&deg;F. </li>
+                    <li> Bake for minutes. </li>
+                </ol>
+            </div>
+            <!-- Cinnamon Sugar Cookies -->
+            <div class="recipe" id="cinnamon_sugar_cookies">
+                <p class="name"> Cinnamon Sugar Cookies </p>
+                <p class="serving"> Serving Size: 36 small cookies </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> &frac12; cup of butter </li>
+                    <li> &frac12; cup of sugar </li>
+                    <li> 1 egg </li>
+                    <li> &frac12; tsp of vanilla extract </li>
+                    <li> 1&frac14; cup of flour </li>
+                    <li> 2 tsp of baking powder </li>
+                    <li> &frac18; tsp of salt </li>
+                </ul>
+                <p class="sub_lbl"> Coating </p>
+                <ul class="ingredients">
+                    <li> 2 tbsp of sugar </li>
+                    <li> 2 tbsp of cinnamon </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Let the butter soften and the egg get to room temperature. </li>
+                    <li> Once the butter and egg are ready, cream together the butter and the sugar on medium high speed until light and fluffy. </li>
+                    <li> Add in the egg and vanilla extract. </li>
+                    <li> Beat on medium heat until the wet ingredients come together. </li>
+                    <li> In a separate bowl, mix together the flour, baking powder, and salt. </li>
+                    <li> Add the dry ingredients with the wet a little at a time. </li>
+                    <li> Mix on medium speed until all the dry ingreidents are incorporated. </li> 
+                    <li> Refrigerate and let it rest for at least 2 hours for the flavors to develop. </li>
+                    <li> In a plate, combine the sugar and cinnamon for the coating. </li>
+                    <li> Once the dough is rested, mold the dough into little spheres. </li>
+                    <li> Roll the spheres around the coating until completely covered. </li>
+                    <li> Press down slightly on the spheres so that it is slightly flat on top and bottom. </li>
+                    <li> Repeat until all the dough is used. </li>
+                    <li> Preheat the oven to 375&deg;F. </li>
+                    <li> Bake the cookies for 10 minutes.</li>
+                    <li> Once baked, remove from the pan to cool on a rack. </li>
+                </ol>
+            </div>
+            <!-- Matcha White Chocolate Shortbread -->
+            <div class="recipe" id="matcha_shortbread">
+                <p class="name"> Matcha White Chocolate Shortbread </p>
+                <p class="serving"> Serving Size: 20 cookies </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> 1&frac14; cup of flour </li>
+                    <li> &frac12; cup of confectioner's sugar </li>
+                    <li> &frac12; cup of butter </li>
+                    <li> 1 egg yolk </li>
+                    <li> 1&frac12; tbsp of matcha powder </li>
+                    <li> Pinch of salt </li>
+                    <li> 1 cup of white chocolate chips</li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ul class="steps">
+                    <li> Cream together the sugar and butter. </li>
+                    <li> Add in the egg yolk and stir </li>
+                    <li> In a separate bowl, mix together flour, matcha powder, and salt. </li>
+                    <li> Add in the dry ingredients into the wet ingredients and mix. </li>
+                    <li> Add in the white chocolate chips and stir. </li>
+                    <li> Roll into a square log about 2" thick. </li>
+                    <li> Refrigerate for at least 4 hours. </li>
+                    <li> Once dough is rested, slice into 1" cubes. </li>
+                    <li> Preheat oven to 350&deg;F. </li>
+                    <li> Bake for 18 minutes and then let cool. </li>
+                </ul>
+            </div>
+            <!-- Oatmeal Chocolate Chip Cookies -->
+            <div class="recipe" id="oatmeal_chocolate_chip_cookies">
+            <p class="name"> Oatmeal Chocolate Chip Cookies </p>
+                <p class="serving"> Serving Size: 20 cookies </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> &frac12; cup of butter </li>
+                    <li> &frac12; cup of brown sugar </li>
+                    <li> &frac14; cup of white sugar </li>
+                    <li> 1 egg </li>
+                    <li> 1 tsp of vanilla</li>
+                    <li> &frac34; cup of flour </li>
+                    <li> &frac12; tsp of baking soda </li>
+                    <li> &frac12; tsp of salt </li>
+                    <li> 1 tsp of cinnamon </li>
+                    <li> 1&frac12; cup of oats </li>
+                    <li> 1&frac12; cup of chocolate chips </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Let the butter soften and the egg get to room temperature. </li>
+                    <li> Once the butter and egg are ready, cream together the butter, brown sugar, and white sugar on medium high speed until light and fluffy. </li>
+                    <li> Add in the egg and vanilla extract. </li>
+                    <li> Beat on medium heat until the wet ingredients come together. </li>
+                    <li> In a separate bowl, mix together the flour, baking soda, salt, cinnamon, and oats. </li>
+                    <li> Add the dry ingredients with the wet a little at a time. </li>
+                    <li> Mix on medium speed until all the dry ingreidents are incorporated. </li> 
+                    <li> Add in the chocolate chips and mix until incorporated. </li>
+                    <li> Refrigerate and let it rest for at least 2 hours for the flavors to develop. </li>
+                    <li> Once the dough is rested, form little spheres with the batter. </li>
+                    <li> Press down on the spheres so that they are about &frac34;" thick. </li>
+                    <li> Preheat the oven to 375&deg;F. </li>
+                    <li> Bake the cookies for 12 minutes. </li>
+                </ol>
+            </div>
+            <!-- Peach Crumb Bar -->
+            <div class="recipe" id="peach_crumb_bar">
+                <p class="name"> Peach Crumb Bar </p>
+                <p class="serving"> Serving Size: 9" x 13" pan </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <p class="sub_lbl"> Crust/Topping: </p>
+                <ul class="ingredients">
+                    <li> 3 cups of flour </li>
+                    <li> 1 cup of sugar </li>
+                    <li> &frac12; tsp of salt </li>
+                    <li> 1 tsp of baking powder </li>
+                    <li> &frac12; tsp of cinnamon </li>
+                    <li> 1 cup of butter </li>
+                    <li> 1 egg </li>
+                </ul>
+                <p class="sub_lbl"> Peach filling: </p>
+                <ul class="ingredients">
+                    <li> 3 cups of diced peaches (about 5-6 peaches) </li>
+                    <li> 1 tbsp of flour </li>
+                    <li> 1 tbsp of sugar </li>
+                    <li> 1 tbsp of lemon juice </li>
+                    <li> &frac12; tsp of salt </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Freeze the butter so that it stays cold when cutting. </li>
+                    <li> Mix together the flour, sugar, salt, baking powder, and cinnamon in a bowl. </li>
+                    <li> Dice the butter into cubes and then place into the bowl. </li>
+                    <li> Using a pastry cutter, cut the butter into the flour mixture. Mixture should be crumbly and have lumps of butter here and there. Be careful not to overmix. </li>
+                    <li> Add in one egg and gently mix it in. </li>
+                    <li> Preheat the oven to 350&deg;F. </li>
+                    <li> Line a pan with parchment paper. Set aside about 2 cups of the crust mixture. </li>
+                    <li> Using the rest of the crust mixture, pour it into the pan and press it down to form the crust. </li>
+                    <li> Bake in the oven for 15 minutes. </li>
+                    <li> In the meantime, begin the peach filling. Remove the skin and pit from the peaches and dice into 1" cubes. </li>
+                    <li> Add in the flour, sugar, lemon juice, and salt into the peaches and mix. Stir until the ingredients are all incorporated and peaches are covered. </li>
+                    <li> Pour the peach filling on top of the baked crust. Top with the rest of the crust/topping mixture. </li>
+                    <li> Bake at 350&deg;F for 35-45 minutes. </li>
+                    <li> Let it cool to room temperature and then place in the fridge. Cut when cold and enjoy. </li>
+                </ol>
+            </div>
+            <!-- Snickerdoodle Cookies -->
+            <div class="recipe" id="snickerdoodle">
+                <p class="name"> Snickerdoodle Cookies </p>
+                <p class="serving"> Serving Size: 22 cookies </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> 1&frac12; cups of flour </li>
+                    <li> &frac12; cup of butter </li>
+                    <li> &frac12; cup of white sugar </li>
+                    <li> 1 egg </li>
+                    <li> &frac12; tsp of baking soda </li>
+                    <li> &frac12; tsp of vanilla extract </li>
+                    <li> 1&frac12; tsp of cream of tartar </li>
+                    <li> Pinch of salt </li>
+                    <li> 1&frac12; tbsp of white sugar </li>
+                    <li> 1 tbsp of cinnamon </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Cream together butter and sugar. </li>
+                    <li> Add in the egg and vanilla and mix. </li>
+                    <li> In a separate bowl, mix together the flour, baking soda, cream of tartar, and salt. </li>
+                    <li> Slowly add in the dry ingredients to the wet ingredients and mix in. </li>
+                    <li> Refrigerate and let it rest for at least 4 hours. </li>
+                    <li> On a plate, mix together the cinnaon and white sugar to form the coating. </li>
+                    <li> Once dough is rested, form little spheres with the dough. </li>
+                    <li> Roll each sphere in the cinnamon-sugar mix until completely covered. </li>
+                    <li> Preheat oven to 400&deg;F. </li>
+                    <li> Bake the cookies for 10 minutes and then let cool. </li>
+                </ol>
+            </div>
+            <!-- Lazy Apple Pie -->
+            <div class="recipe" id="lazy_apple_pie">
+                <p class="name"> Lazy Apple Pie </p>
+                <p class="serving"> Serving Size: 7" diameter </p>
+                <br>
+                <p class="lbl"> Ingredients: </p>
+                <ul class="ingredients">
+                    <li> 2 pre-made pie crusts </li>
+                    <li> Optional: 1 egg </li>
+                </ul>
+                    <p class="sub_lbl"> Apple Filling: </p>
+                <ul class="ingredients">
+                    <li> 4 granny smith apples </li>
+                    <li> 2 tbsps of flour </li>
+                    <li> 1 &frac12; tbsp of lemon juice (about &frac12; a lemon) </li>
+                    <li> &frac12; cup of sugar </li>
+                    <li> 1 tsp of salt </li> 
+                    <li> 1 tsp of cinnamon </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step: </p>
+                <ol class="steps">
+                    <li> Thaw the pie crust as instructed. Leave it in the fridge for it to stay cool until ready to use. </li>
+                    <li> Peel the apples, then core and thinly slice them (about &frac14; in thick). </li>
+                    <li> Add in the flour, lemon juice, sugar, salt, and cinnamon on top of the apples. </li>
+                    <li> Mix the apple mixture together, making sure the mixture coats all the apples. </li>
+                    <li> Let the mixture sit on the side for 5-10 minutes. </li>
+                    <li> Butter the pie pan. </li> 
+                    <li> Roll out the first pie crust so that is round and about &frac18; thick. </li>
+                    <li> Place the pie crust on to the pie pan and gently press down so that the dough fits into the mold of the pan. 
+                         Make sure that the dough reaches all of the edges. </li>
+                    <li> Preheat the oven to 375&deg;F. </li>  
+                    <li> Add in the apple filling. </li>
+                    <li> Roll out the second pie crust just like the first one. </li>
+                    <li> Place the second pie crust on top. </li> 
+                    <li> Pinch the edges of the two pie crusts together to create a crimp. Make sure that the two doughs are sealed together. </li>
+                    <li> (Optional) Beat an egg to create an egg wash to brush the top o the pie and sprinkle with sugar. </li>
+                    <li> Cut four slits like an "x" in the top of the pie to create a vent. </li>
+                    <li> Bake for about 45 minutes until the top is a light golden brown. </li>
+                    <li> Allow pie to cool completely before serving. </li> 
+                </ol>
+            </div>
+            <!-- Tiramisu -->
+            <div class="recipe" id="tiramisu">
+                <p class="name"> Tiramisu </p>
+                <p class="serving"> Serving Size: 5" x 7" pan</p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients"> 
+                    <li> 2 eggs </li>
+                    <li> 8 oz of mascarpone cheese </li>
+                    <li> &frac14; cup of sugar </li>
+                    <li> &frac12; tsp of vanilla extract </li>
+                    <li> Pinch of cream of tartar </li>
+                    <li> 10 oz of coffee </li>
+                    <li> 24 ladyfinger biscuits </li>
+                    <li> 1 &frac12; tbsp of cocoa powder </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Brew about 10 oz of coffee and then put in the fridge to cool.</li>
+                    <li> Separate the eggs into yolks and whites. </li>
+                    <li> On high speed, beat together egg yolks and sugar until it turns a pale yellow. </li>
+                    <li> Add in vanilla extract and mascarpone cheese. Mix until combined. </li>
+                    <li> In a separate bowl, whisk egg whites on high speed until stiff peaks form. Add a pinch of cream of tartar to help with the whisking. </li>
+                    <li> Fold in the egg whites into the cheese mixture. </li>
+                    <li> Pour the cooled coffee into a shallow dish. </li>
+                    <li> Take one ladyfinger and dip only half of the biscuit (horizontal) into the coffee. Don't let the ladyfinger stay in the coffee for too long as it can absorp a large amount of liquid in a few seconds.  </li>
+                    <li> After dipping, place in the serving pan. </li>
+                    <li> Repeat until a layer of ladyfingers form. </li>
+                    <li> Spread a layer of cream on to the ladyfinger layer. </li>
+                    <li> Repeat two more times to make a 3 layer tiramisu, ending with the cream layer on top. </li>
+                    <li> Sprinkle cocoa powder on top of the top cream layer. </li>
+                    <li> Cover and fridge for at least 2 hours. </li>
+                    <li> Keep refrigerated when not eating. </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Side Column (right) -->
+        <div class="column side">
+            <!-- Recipe List -->
+            <div class="sticky_side">
+                <!-- Search Bar -->
+                <div class="searchbar">
+                    <input id="inputSearch" type="text" name="searchBar" placeholder="Search..." onkeyup="search()">
+                </div>
+                <p class="list_heading"> Desserts Recipe List </p>
+                <div class="recipe_list">
+                    <p class="list"> <a href="#chocolate_chip_cookies"> Chocolate Chip Cookies </a></p>
+                    <p class="list"> <a href="#cinnamon_sugar_cookies"> Cinnamon Sugar Cookies </a></p>
+                    <p class="list"> <a href="#matcha_shortbread"> Matcha White Chocolate Shortbread </a></p>
+                    <p class="list"> <a href="#oatmeal_chocolate_chip_cookies"> Oatmeal Chocolate Chip Cookies </a></p>
+                    <p class="list"> <a href="#peach_crumb_bar"> Peach Crumb Bar </a></p>
+                    <p class="list"> <a href="#snickerdoodle"> Snickerdoodle Cookies </a></p>
+                    <p class="list"> <a href="#lazy_apple_pie"> Lazy Apple Pie </a></p>
+                    <p class="list"> <a href="#tiramisu"> Tiramisu </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="to_top" href="#top_page">  &#8593; </a>
+
+    <!-- Footer -->
+	<footer>
+		<p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> by Kristi Yang | <a href="credit.html"> Credits Page </a></p>
+	</footer>
+</body>
+</html>

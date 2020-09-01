@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">  
+    <!-- Javascript -->
+    <script src="javascript/mobileNav.js"></script>
+	<title> Kristi's Cookbook | About Me </title>
+</head>
+<body>
+	<!-- Header -->
+	<header id="top_page">
+        <br>
+	</header>
+	
+	<!-- Nav -->
+	<div id="top">
+        <a href="index.html"> <img src="images/small_logo.jpg" alt="Kristi's Cookbook"> </a>
+	<nav>
+    <div class="decor_bar">
+        <br>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html"> About </a>
+        <a href="resources.html">Resources</a>
+        <div class="dropdown">
+            <a href="all_recipes.html"> Recipes</a> 
+            <div class="categories">
+                <a href="breakfast.html"> Breakfast </a>
+                <a href="desserts.html">Desserts</a>
+                <a href="drinks.html"> Drinks </a>
+                <a href="meat.html">Meat & Tofu </a>
+                <a href="pasta.html">Pasta & Noodles</a>
+                <a href="seafood.html"> Seafood </a>
+                <a href="soup.html"> Soups</a>
+                <a href="snacks.html">Snacks</a>
+                <a href="vegetables.html"> Vegetables</a>
+            </div>
+        </div>
+        <a href="blog.html"> Blog </a>
+    </div>
+	</nav>
+    </div>
+    <div class="decor_bar">
+        <br>
+    </div>
+
+    <!-- Begin Content -->
+    <div class="row">
+    <!-- Mobile Nav -->
+    <button id="bttnMobileNav" onclick="openMobile()"> <span></span><span></span><span></span> </button>
+    <div id="mobileNav">
+        <button id="bttnMobileClose" onclick="closeMobile()"> &#10006; </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><button onclick="mobiledrop()"> Recipes&#9662; </button></li>
+                <ul id="mobileCat">
+                    <li><a href="all_recipes.html">Recipe Index</a></li>
+                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="desserts.html">Desserts</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                    <li><a href="meat.html">Meat & Tofu</a></li>
+                    <li><a href="pasta.html">Pasta & Noodles</a></li>
+                    <li><a href="seafood.html">Seafood</a></li>
+                    <li><a href="soup.html">Soups</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                </ul>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+        <!-- Main Column (left) -->
+        <div class="column main">
+            <div class="about_me">
+                <h1 class="subheading"> About Me </h1>
+                <p class="text"> Growing up, my family has always had a sweet tooth. At my house, there would always be some kind of baked good lying around. Whenever we went to a bakery, we would have to stop each other from buying too many pastries. We loved pastries, but there was one problem. Most of the pastries were too sweet. 
+                <br>
+                <br>
+                So, I decided to venture into baking. I wanted to eat the same pastries that I loved, but with less of the sugary sweetness. That's where it all started. After making my first batch of vanilla cupcakes from scratch, I realized how much I loved baking. It was so much fun combining the different ingredients and seeing how adding more of one thing could change the outcome. To me, it felt like science with a tasty reward at the end. 
+                <br>
+                <br>
+                After a while of baking, I started to explore cooking. Partially because I went off to college and needed to feed myself, but also because baking sweets all the time resulted gaining a little too much weight. So, I started to branch out into cooking and began to develop a passion for cooking. Just like baking, my love for cooking was rooted in the excitement of experimenting with different flavors and ingredient amounts. 
+                <br>
+                <br>
+                And so, over the years, I've managed to come up with a couple of good recipes. Some have been passed down from the wonderful chefs in my family (my aunt, grandma, and mom), while others are from years of experimenting to create my own versions. Hopefully you enjoy making any of the recipes that you find!
+
+                </p>
+            </div>
+        </div>
+        <!-- Side Column (right) -->
+        <div class="column side">
+            <div class="image">
+                <img id="me" src="images/self-about.jpeg" alt="picture of me">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+	<footer>
+		<p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> by Kristi Yang | <a href="credit.html"> Credits Page </a></p>
+	</footer>
+</body>
+</html>

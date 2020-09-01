@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/recipe.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">  
+    <!-- Javascript -->
+    <script src="javascript/recipeSearch.js"></script>
+    <title> Kristi's Cookbook | Meat & Tofu </title>
+</head>
+<body onload="loadRecipes()">
+	<!-- Header -->
+	<header id="top_page">
+        <br>
+	</header>
+	
+	<!-- Nav -->
+	<div id="top">
+        <a href="index.html"> <img src="images/small_logo.jpg" alt="Kristi's Cookbook"></a>
+	<nav>
+    <div class="decor_bar">
+        <br>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html"> About </a>
+        <a href="resources.html">Resources</a>
+        <div class="dropdown">
+            <a href="all_recipes.html">Recipes</a>
+            <div class="categories">
+                <a href="breakfast.html"> Breakfast </a>
+                <a href="desserts.html">Desserts</a>
+                <a href="drinks.html"> Drinks </a>
+                <a href="meat.html">Meat & Tofu </a>
+                <a href="pasta.html">Pasta & Noodles</a>
+                <a href="seafood.html"> Seafood </a>
+                <a href="snacks.html">Snacks</a>
+                <a href="soup.html"> Soups</a>
+                <a href="vegetables.html"> Vegetables</a>
+            </div>
+        </div>
+        <a href="blog.html"> Blog </a>
+    </div>
+	</nav>
+    </div>
+    <div class="decor_bar">
+        <br>
+    </div>
+
+    <!-- Begin Content-->
+    <!-- Mobile Nav -->
+    <button id="bttnMobileNav" onclick="openMobile()"> <span></span><span></span><span></span> </button>
+    <div id="mobileNav">
+        <button id="bttnMobileClose" onclick="closeMobile()"> &#10006; </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><button onclick="mobiledrop()"> Recipes&#9662; </button></li>
+                <ul id="mobileCat">
+                    <li><a href="all_recipes.html">Recipe Index</a></li>
+                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="desserts.html">Desserts</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                    <li><a href="meat.html">Meat & Tofu</a></li>
+                    <li><a href="pasta.html">Pasta & Noodles</a></li>
+                    <li><a href="seafood.html">Seafood</a></li>
+                    <li><a href="soup.html">Soups</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                </ul>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <!-- Main Column (left) -->
+        <div class="column main">
+            <!-- Mobile Search Bar -->
+            <div class="mobile">
+                <img id="mobileIcon" src="images/icons/search-icon.jpg">
+                <input id="mobileSearch" list="recipeList" name="mobileSearch" placeholder="Search..." oninput="mobileSearch()">
+                <datalist id="recipeList"></datalist>
+            </div>
+            <!-- Beef -->
+                <!-- Kimchi Beef -->
+                <div class="recipe" id="kimchi_beef">
+                    <p class="name"> Kimchi Beef </p>
+                    <p class="serving"> Serving Size: 5-7 servings </p>
+                    <br>
+                    <p class="lbl"> Ingredients </p>
+                    <ul class="ingredients">
+                        <li> 3 cloves of garlic </li>
+                        <li> 5 oz of kimchi </li>
+                    </ul>
+                    <p class="sub_lbl"> Marinade </p>
+                    <ul class="ingredients">
+                        <li> 1 lb of flank steak </li>
+                        <li> 3 scallions </li>
+                        <li> &frac12; tsp of brown sugar </li>
+                        <li> &frac14; cup of soy sauce </li>
+                        <li> &frac12; tsp of Korean red chili pepper flakes (gochugaru) </li>
+                        <li> 1 tsp of tapioca starch (太白粉) </li>
+                    </ul>
+                    <br>
+                    <p class="lbl"> Step by Step </p>
+                    <ol class="steps">
+                        <li> Thinly chop 3 scallions and place into a bowl. </li> 
+                        <li> Add soy sauce and brown sugar into the bowl and let sit. </li> 
+                        <li> Slice the flank steak into thin shreds (肉絲). </li>
+                        <li> Add the steak into the bowl and mix so that the meat is soaked in the marinade. </li> 
+                        <li> Add in Korean red chili pepper flakes and tapioca starch. </li> 
+                        <li> Mix until incorporated. </li>
+                        <li> Cover and refrigerate for at least 2 hours </li>
+                        <li> Once the beef has been marinated for a couple hours, warm the pan. </li> 
+                        <li> Add in about 2 spatula's worth of oil into the pan. </li>
+                        <li> Dice the garlic. </li>
+                        <li> Once the oil is warmed, add in the garlic on low heat. </li>
+                        <li> When the smell of garlic starts to form, add in the beef. </li>
+                        <li> On medium high heat, stir the beef and slightly shake the pieces so that they separate. </li>
+                        <li> Once the beef is about 50% cooked, add in the kimchi. </li>
+                        <li> Mix until the beef is done, then remove on to a plate or bowl. </li> 
+                        <li> Let it sit for 3-5 minutes. </li> 
+                    </ol>
+                </div>
+            <!-- Chicken -->
+                <!-- Balsamic Chicken -->
+                <div class="recipe" id="balsamic_chicken">
+                    <p class="name"> Balsamic Chicken </p>
+                    <p class="serving"> Serving Size: 6-8 pieces </p>
+                    <br>
+                    <p class="lbl"> Ingredients </p>
+                    <ul class="ingredients">
+                        <li> 1 lb of chicken breast </li>
+                        <li> &frac12; tsp of salt </li>
+                        <li> &frac12; tsp of black pepper </li>
+                        <li> &frac14; tsp of paprika </li>
+                        <li> &frac14; tsp of garlic powder </li>
+                        <li> &frac14; tsp of oregano </li>
+                        <li> &frac12; tsp of brown sugar </li>
+                        <li> 2 tsp of lemon juice </li>
+                        <li> 1 tsp of olive oil </li>
+                        <li> 2 tsp of cold water </li>
+                        <li> 2 tsp of balsamic vinaigrette </li>
+                    </ul>
+                    <br>
+                    <p class="lbl"> Step by Step </p>
+                    <ol class="steps">
+                        <li> Cut the chicken breast into slices about 2" thick. </li>
+                        <li> Using a meat tenderizer, pound the chicken until they are 1" thick. </li>
+                        <li> In a bowl, mix together all of the ingredients. </li>
+                        <li> Pour into a shallow plate and dip chicken pieces in one at a time. </li>
+                        <li> Roll and place into a bowl or a bag and refrigerate. Let it sit overnight. </li>
+                        <li> Once marinated, cook the chicken either using a grill or a pan. </li>
+                    </ol>
+                    <ul class="sub_steps">
+                        <li> <b> Grill: </b> Brush oil on to the grill and heat to 510&deg;F (Max). Grill for about 2 minutes on each side. </li>
+                        <li> <b> Pan: </b> Add in oil to cover pan about 1" deep. On medium heat, cook each side for about 2 minutes. </li>
+                    </ul>
+                </div>
+                <!-- Chicken & Okra Stir Fry -->
+                <div class="recipe" id="chicken_okra_stirfry">
+                    <p class="name"> Chicken & Okra Stir Fry </p>
+                    <p class="serving"> Serving Size: 4-6 servings </p>
+                    <br>
+                    <p class="lbl"> Ingredients </p>
+                    <ul class="ingredients">
+                        <li> 1&frac12; lb of <a href="#soy_sauce_chicken" target="_blank"> Soy Sauce Chicken Marinade </a> chicken </li>
+                        <li> 12 oz of okra </li>
+                        <li> 7 oz of cherry tomatoes (about 20 of them) </li>
+                        <li> 3 red hot peppers </li>
+                        <li> 4 cloves of garlic </li>
+                        <li> 1 tbsp of soy sauce </li>
+                        <li> &frac12; tsp of brown sugar </li>
+                        <li> &frac14; cup of cold water </li>
+                    </ul>
+                    <br>
+                    <p class="lbl"> Step by Step </p>
+                    <ol class="steps">
+                        <li> Dice the chicken into 1" cubes </li>
+                        <li> Marinate the meat using the <a href="#soy_sauce_chicken" target="_blank"> Soy Sauce Chicken Marinade </a></li>
+                        <li> Boil a pot of water. </li>
+                        <li> When the water boils, cook the okra on medium heat until it changes color. Okra cooks quickly, so it doesn't need to be cooked for too long. </li>
+                        <li> Let the okra cool. </li>
+                        <li> In the meantime, dice the red peppers and the garlic. </li>
+                        <li> Once the okra is cooled, cut into &frac12;" slices. </li>
+                        <li> Slice the cherry tomatoes into halves. </li>
+                        <li> In a pan, heat up about 1-2 spatulas worth of oil. </li>
+                        <li> On medium high heat, cook the chicken. </li>
+                        <li> Once chicken is done, remove from heat. </li>
+                        <li> Add in another spatulas worth of oil. </li>
+                        <li> Add in garlic and red peppers and cook until flavors come out. </li>
+                        <li> Once the smell of garlic comes out, add in the okra and the cherry tomatoes and cook on medium heat. </li>
+                        <li> Add in the soy sauce, cold water, and brown sugar. </li>
+                        <li> Mix and then cover the pan. Let it cook until the liquid boils. </li>
+                        <li> Once boiled, add the chicken back into the pan and mix. </li>
+                        <li> Cover and let it cook on low heat until the liquid boils again. </li>
+                        <li> Remove from heat and enjoy. </li>
+                    </ol>
+                </div>
+                <!-- Japanese Chicken Curry -->
+                <div class="recipe" id="japanese_chicken_curry">    
+                    <p class="name"> Japanese Chicken Curry </p>
+                    <p class="serving"> Serving Size: 4-6 servings </p>
+                    <br>
+                    <p class="lbl"> Ingredients </p>
+                    <p class="sub_lbl"> Marinade </p>
+                        <ul class="ingredients">
+                        <li> 1 lb of chicken </li>
+                        <li> &frac12; tsp of salt </li>
+                        <li> &frac12; tsp of black pepper </li>
+                        <li> &frac12; tsp of garlic powder </li>
+                        <li> 1 tsp of tapioca starch </li>
+                    </ul>
+                    <p class="sub_lbl"> Sauce </p>
+                    <ul class="ingredients">
+                        <li> 4 carrots </li>
+                        <li> 2 gold potatoes or about 18 small potatoes </li>
+                        <li> &frac12; of a white onion </li>
+                        <li> 1 pack of Golden Curry Sauce Mix </li>
+                    </ul>
+                    <br>
+                    <p class="lbl"> Step by Step </p>
+                    <ol class="steps">
+                        <li> Dice up the chicken. </li>
+                        <li> Sprinkle salt, pepper, garlic powder, and tapioca starch on the diced chicken. </li>
+                        <li> Massage until the chicken is covered in the mariande. </li>
+                        <li> Refrigerate for at least 4 hours. </li>
+                        <li> Peel the potatoes, carrots, and onion </li>
+                        <li> Dice the vegetables into 1" cubes. The vegetables and chicken should be the same size. </li>
+                        <li> In a pot, add in about 2 spatulas worth of oil. </li>
+                        <li> Once the oil heats up, add in the chicken and cook on medium heat. </li>
+                        <li> Set chicken aside once cooked. </li>
+                        <li> Add another spatula of oil and turn to medium high heat. </li>
+                        <li> Add in the potatoes and carrots. Sprinkle a bit of salt to help the vegetables cook. </li>
+                        <li> Add in a small cup of cold water and cover the pot. </li>
+                        <li> Let the pot cook on medium high heat until the carrots and potatoes are soft. The vegetables should be soft enough to cut it with the spatula, but not too soft that it can be easily mashed. </li>
+                        <li> Add in the onions and chicken and cook on medium heat until the onions are translucent. </li>
+                        <li> Add in 1 cup of cold water and 1 pack of the Golden Curry Sauce Mix. </li>
+                        <li> On medium low heat, stir until the sauce mix block melts into a sauce and covers all the vegetables. </li>
+                        <li> Serve with rice and enjoy! </li>
+                    </ol>
+                </div>
+                 <!-- Kimchi Chicken Fried Rice -->
+                 <div class="recipe" id="kimchi_chicken_fried_rice">
+                    <p class="name"> Kimchi Chicken Fried Rice </p>
+                    <p class="serving"> Serving Size: 5-7 servings</p>
+                    <br>
+                    <p class="lbl"> Ingredients </p>
+                    <ul class="ingredients">
+                        <li> 1&frac12; lbs of <a href="#korean_spicy_chicken_marinade" target="_blank"> Korean Spicy Chicken Marinade </a> chicken</li>
+                        <li> 6 eggs </li>
+                        <li> 1 lb of carrots </li>
+                        <li> 1 white onion </li>
+                        <li> 8 oz of white mushrooms </li>
+                        <li> 12 oz of shelled edamame beans </li>
+                        <li> 8 oz of sliced kimchi </li>
+                        <li> 2-3 cups of cooked rice </li>
+                    </ul>
+                    <br>
+                    <p class="lbl"> Step by Step </p>
+                    <ol class="steps">
+                        <li> Dice the chicken into 1" cubes </li>
+                        <li> Marinate the meat using the <a href="#korean_spicy_chicken_marinade" target="_blank"> Korean Spicy Chicken Marinade</a>.</li>
+                        <li> Peel and dice carrots into &frac12;" cubes. </li>
+                        <li> Wash and dice the onions into &frac12;" cubes. </li>
+                        <li> Wash and slice the mushrooms. </li>
+                        <li> Scramble the eggs. </li>
+                        <li> In a pan, cook the scrambled eggs until done and then set aside. </li>
+                        <li> Cook the chicken on medium heat until done and then set aside. </li>
+                        <li> In a wok, heat up about 2 spatulas worth of oil. </li>
+                        <li> When the oil is heated, add in the garlic. </li>
+                        <li> Once the garlic smell comes out, add in the carrots. Sprinkle a bit of salt to help the carrots cook. </li>
+                        <li> Cover and let it cook on medium heat until carrots are softened. The spatula should be able to cut through the carrots. </li>
+                        <li> Once the carrots are ready, add in the onion, mushrooms, and edamame. Sprinkle in a bit more salt. </li>
+                        <li> Stir and the cover the wok. Let it cook on medium heat until vegetables are done. </li>
+                        <li> Add in the cooked chicken, scrambled eggs, and kimchi. </li>
+                        <li> Stir and the cover. Let it cook on low heat for 3-5 minutes. </li>
+                        <li> Add in the cooked rice and mix it in. </li>
+                    </ol>
+                </div>
+                <!-- Shortcut Chicken Channa Masala -->
+                <div class="recipe" id="chicken_channa_masala">
+                    <p class="name"> Shortcut Chicken Channa Masala </p>
+                    <p class="serving"> Serving Size: 3-5 servings </p>
+                    <br>
+                    <p class="lbl"> Ingredients: </p>
+                    <p class="sub_lbl"> Marinade </p>
+                    <ul class="ingredients">
+                        <li> 1 lb of chicken breast </li>
+                        <li> 1 tbsp of lemon juice (about &frac12; a lemon) </li>
+                        <li> 1 tsp of salt </li>
+                        <li> 1 tsp of black pepper </li> 
+                        <li> 1 tsp of garlic powder </li>
+                        <li> &frac12; tsp of paprika </li>
+                        <li> 1 tsp of chili powder </li>
+                        <li> 1&frac12; tsp of tikka masala sauce </li>
+                    </ul>
+                    <p class="sub_lbl"> Sauce </p>
+                    <ul class="ingredients">
+                        <li> &frac12; of an onion</li>
+                        <li> &frac14; cup of tikka masala sauce</li>
+                        <li> 3 tomatoes </li>
+                        <li> 1 can of chickpeas </li>
+                        <li> &frac14; cup of half and half </li>
+                        <li> 1 tbsp of flour </li>
+                    </ul>
+                    <br>
+                    <p class="lbl"> Step by Step: </p>
+                    <ol class="steps">
+                        <li> Dice the chicken breasts </li>
+                        <li> Sprinkle the salt, pepper, garlic powder, chili powder, and paprika on the chicken and massage. </li>
+                        <li> Place into a bowl or ziploc bag and add in the tikka masala sauce. </li>
+                        <li> Squeez in the lemon juice and mix until the sauce goes in. </li> 
+                        <li> Let it sit overnight for the chicken to marinate. </li> 
+                        <li> Once chicken has been marinated overnight, chop the onion and tomatoes. </li>
+                        <li> Warm up a pan and about 1-2 spatuals worth of oil. </li>
+                        <li> Cook the chicken on medium high heat. </li>
+                        <li> Once cooked, set aside. </li>
+                        <li> In a sauce pan on medium heat, sautee the onions. Sprinkle a bit of salt on top to help develop the flavor. </li>
+                        <li> Once the onions are about halfway done (onions start to look translucent), add in the tomoates. </li>
+                        <li> On medium heat, cover the pan and let the tomatoes cook until soften and the tomato juice forms. </li>
+                        <li> When the sauce begins to boil, add in the tikka masala sauce and the half and half. </li>
+                        <li> On medium low heat, stir to incorporate all of the ingredients. Cover and let it simmer until it boils. </li>
+                        <li> Once boils, taste the sauce and edit accordingly if needed. Add more half and half if not creamy enough or add more spice if not flavorful enough. </li>
+                        <li> After sauce is prepared as desired, add in the chickpeas and let simmer for about 1 minute. </li>
+                        <li> Add in the cooked chicken and stir. </li>
+                        <li> In a container or cup, combine the flour with a little bit of cold water and stir until the flour dissolves. </li>
+                        <li> Add in the flour mixture and stir. </li>
+                        <li> On medium low heat, cover the sauce and let it cook until it boils. </li>
+                        <li> Remove from heat and serve with basmati rice. </li> 
+                    </ol>
+                </div>
+                <!-- Herb Chicken Marinade -->
+                <div class="recipe" id="herb_chicken_marinade">
+                    <p class="name"> Herb Chicken Marinade </p>
+                    <p class="serving"> Serving Size: 1 lb </p>
+                    <br>
+                    <p class="lbl"> Ingredients </p>
+                    <ul class="ingredients">
+                        <li> 1 lb of chicken breast </li>
+                        <li> 2 tsp of herbes de provence or italian seasoning </li>
+                        <li> 1 tsp of salt </li>
+                        <li> 2 tsp of garlic powder </li>
+                        <li> 2 tsp of black pepper </li>
+                        <li> 3 tsp of lemon juice </li>
+                    </ul>
+                    <br>
+                    <p class="lbl"> Step by Step </p>
+                    <ol class="steps">
+                        <li> Prepare the chicken as the recipe needs. </li>
+                        <li> In a bowl, mix together the herbes, salt, garlic powder, and black pepper. </li>
+                        <li> Coat the chicken with the spice mix. </li>
+                        <li> Add lemon juice on top of the chicken. </li>
+                        <li> Refrigerate and let it sit for at least 2 hours. </li>
+                    </ol>
+                </div>
+                <!-- Korean Spicy Chicken Mariande -->
+                <div class="recipe" id="korean_spicy_chicken_marinade">
+                    <p class="name"> Korean Spicy Chicken Marinade </p>
+                    <p class="serving"> Serving Size: 1&frac12; lbs </p>
+                    <br>
+                    <p class="lbl"> Ingredients </p>
+                    <ul class="ingredients">
+                        <li> 1&frac12; lbs of chicken breast </li>
+                        <li> 5 cloves of garlic </li>
+                        <li> 2&frac12; tsp of Korean red chili paste (Gochujang) </li>
+                        <li> &frac14; cup of cold water </li>
+                        <li> &frac12; tsp of brown sugar </li>
+                        <li> 1 tsp of rice wine</li>
+                    </ul>
+                    <br>
+                    <p class="lbl"> Step by Step </p>
+                    <ol class="steps">
+                        <li> Prepare the chicken as needed by the recipe. </li>
+                        <li> Finely mince the garlic. </li>
+                        <li> In a bowl, mix together the minced garlic, chili paste, cold water, sugar, and rice wine. </li>
+                        <li> Add in the chicken and mix until all the chicken is covered. </li>
+                        <li> Refrigerate and let it sit overnight. </li>
+                    </ol>
+                </div>
+                <!-- Soy Sauce Chicken Marinade -->
+                <div class="recipe" id="soy_sauce_chicken">
+                    <p class="name"> Soy Sauce Chicken Marinade </p>
+                    <p class="serving"> Serving Size: 1&frac12; lbs </p>
+                    <br>
+                    <p class="lbl"> Ingredients </p>
+                    <ul class="ingredients">
+                        <li> 1&frac12; lbs of chicken breast </li>
+                        <li> 2 tbsp of soy sauce </li>
+                        <li> 2-3 scallions </li>
+                        <li> 1 tsp of tapioca starch </li>
+                        <li> &frac12; tsp of brown sugar </li>
+                        <li> &frac12; tsp of rice wine </li>
+                    </ul>
+                    <br>
+                    <p class="lbl"> Step by Step </p>
+                    <ol class="steps">
+                        <li> Finely slice the scallions and place into a bowl. </li>
+                        <li> Add the soy sauce on top of the scallions and mix. Let it sit for at least 10 minutes. </li>
+                        <li> Prepare the chicken as needed for recipe. </li>
+                        <li> Place the chicken into the scallions & soy sauce mixture. </li>
+                        <li> Add in the brown sugar, rice wine, and tapioca starch. Coat the chicken so that it is covered in the mariande. </li>
+                        <li> Cover and refrigerate for at least an hour before using. </li>
+                    </ol>
+                </div>
+            <!-- Pork -->
+                <!-- Mushroom & Scallion Pork Rolls -->
+                <div class="recipe" id="pork_roll">
+                    <p class="name"> Mushroom & Scallion Pork Rolls </p>
+                    <p class="other name"> 豬串捲 </p>
+                    <p class="serving"> Serving Size: 20 rolls </p>
+                    <br>
+                    <p class="lbl"> Ingredients </p>
+                    <ul class="ingredients">
+                        <li> 1 lb of <a href="#sacha_pork" target="_blank"> Sa Cha Pork Marinade</a> pork tenderloin </li>
+                        <li> &frac14; lb of shiitake mushrooms </li>
+                        <li> 2 scallions </li>
+                        <li> 20 toothpicks </li>
+                    </ul>
+                    <br>
+                    <p class="lbl"> Step by Step </p>
+                    <ol class="steps">
+                        <li> Marinate the meat using the <a href="#sacha_pork" target="_blank"> Sa Cha Pork Marinade</a></li>
+                        <li> Slice the scallions into 1" length. </li>
+                        <li> Slice the shiitaki mushrooms about &frac14;" thick. </li>
+                        <li> Place 2 scallions and 2 mushrooms on top of the meat, then roll it up. </li>
+                        <li> Use a toothpick to hold the roll in place. It's okay if the toothpick doesn't go through the scallions or the mushroom, it's important that the toothpick goes through the two ends of the meat.</li>
+                        <li> Repeat until all the meat is used. </li>
+                        <li> Warm up a pan and add enough oil to fill the pan about 1&frac12;" deep. </li>
+                        <li> Once the oil is warmed, place in the rolls. Only put enough so that the rolls do not overlap and can lay completely on their side. </li>
+                        <li> On medium high heat, cook each side until the inside is no longer red/pink (at least 2 minutes on each side). </li>
+                    </ol>
+                </div>
+                <!-- Sa Cha Pork Marinade -->
+                <div class="recipe" id="sacha_pork">
+                    <p class="name"> Sa Cha Pork Marinade </p>
+                    <p class="other name"> 沙茶醬豬肉 </p>
+                    <p class="serving"> Serving Size: 1 lb </p>
+                    <br>
+                    <p class="lbl"> Ingredients </p>
+                    <ul class="ingredients">
+                        <li> 1 lb of pork tenderloin </li>
+                        <li> 2 tbsp of soy sauce </li>
+                        <li> 1 tsp of brown sugar </li>
+                        <li> 1 tbsp of sa cha sauce (沙茶醬) </li>
+                    </ul>
+                    <br>
+                    <p class="lbl"> Step by Step </p>
+                    <ol class="steps">
+                        <li> Slice &frac14;" thick slices of the pork tenderloin. </li>
+                        <li> Using a meat tenderizer, pound the meat until they are about &frac18;" thick. </li>
+                        <li> In a shallow bowl, mix together soy sauce, brown sugar, and sa cha sauce. </li>
+                        <li> Dip both sides of the pork into the marinade. Hold the pieces vertically to let excess sauce drip down. </li>
+                        <li> Roll the pieces up and placing into a bag. Refrigerate until ready to cook. </li>  
+                    </ol>
+                </div>
+                <!-- Soy Sauce Ground Pork Marinade -->
+                <div class="recipe" id="soy_sauce_ground_pork">
+                    <p class="name"> Soy Sauce Ground Pork Marinade </p>
+                    <p class="serving"> Serving Size: 1&frac12; lbs </p>
+                    <br>
+                    <p class="lbl"> Ingredients </p>
+                    <ul class="ingredients">
+                        <li> 1&frac12; lbs of ground pork </li>
+                        <li> 6 scallions </li>
+                        <li> &frac14; cup of soy sauce </li>
+                        <li> 1 tsp of brown sugar </li>
+                        <li> 1 egg </li>
+                    </ul>
+                    <br>
+                    <p class="lbl"> Step by Step </p>
+                    <ol class="steps">
+                        <li> Dice up the scallions and place into a bowl. </li>
+                        <li> Pour the soy sauce, egg, and brown sugar into the bowl with the scallions. </li>
+                        <li> Let the scallions sit for at least 20 minutes. </li>
+                        <li> After the scallions have soaked, add in the ground pork. </li>
+                        <li> Stir in a circle until the meat and the marinade comes together. Only stir in one direction. </li>
+                        <li> Place in the fridge for at least 2 hours. </li>
+                    </ol>
+                </div>
+            <!-- Tofu -->
+                <!-- Mapo Tofu -->
+                <div class="recipe" id="mapo_tofu">
+                    <p class="name"> Mapo Tofu </p>
+                    <p class="other name"> 麻婆豆腐 </p>
+                    <p class="serving"> Serving Size: about 1&frac14; qts </p>
+                    <br>
+                    <p class="lbl"> Ingredients </p>
+                    <ul class="ingredients">
+                        <li> &frac34; lb of ground pork marinated with <a href="#soy_sauce_ground_pork" target="_blank"> Soy Sauce Ground Pork Marinade</a></li>
+                        <li> 28 oz of medium firm tofu (about 2 boxes) </li>
+                        <li> 6 cloves of garlic </li>
+                        <li> 3 tsp of bean sauce (豆瓣醬) </li>
+                        <li> 3 tsp of chili garlic sauce (蒜蓉辣椒醬)</li>
+                        <li> 1 tbsp of rice wine (米酒) </li>
+                        <li> 1 tsp of tapioca starch (太白粉) </li>
+                    </ul>
+                    <br>
+                    <p class="lbl"> Step by Step </p>
+                    <ol class="steps">
+                        <li> Marinate the ground pork with the <a href="#soy_sauce_ground_pork" target="_blank"> Soy Sauce Ground Pork Marinade</a>. Add 1 full egg to the marinade even though the marinade is for 1&frac12; lbs of ground pork. </li>
+                        <li> Finely dice the garlic. </li>
+                        <li> Chop up the tofu into small cubes. </li>
+                        <li> In a pan, warm about 1 spatuala worth of oil. </li>
+                        <li> After warmed, add in the garlic. </li>
+                        <li> Once the garlic smells starts to come out, add in the ground pork. </li>
+                        <li> On medium high heat, cook the ground pork until about 50% done. Make sure the use the spatula to separate the ground pork so it isn't stuck together in one piece. </li>
+                        <li> Add in the bean sauce and chili garlic sauce and let simmer on medium heat. Adjust the amount of sauce if the flavor is not to taste. </li> 
+                        <li> Once the meat soaks up the sauce, add in the tofu and stir until sauce coats the tofu. </li> 
+                        <li> Add in the rice wine and cover. Let cook for about 1-2 minutes. </li>
+                        <li> In a cup or container, mix the tapioca starch with a little bit of cold water. </li>
+                        <li> Add the strach mixture into the sauce and mix in. </li>
+                        <li> Cover and let it cook until it boils. </li>
+                        <li> Remove from heat and enjoy! </li>
+                    </ol>
+                </div>
+        </div>
+
+        <!-- Side Column (right) -->
+        <div class="column side">
+            <!-- Recipe List -->
+            <div class="sticky_side">
+                <!-- Search Bar -->
+                <div class="searchbar">
+                    <input id="inputSearch" type="text" name="searchBar" placeholder="Search..." onkeyup="search()">
+                </div>
+                <p class="list_heading"> Meat & Tofu Recipe List </p>
+                <div class="recipe_list">
+                    <!-- Beef -->
+                    <p class="sub_cat"> Beef </p>
+                    <p class="list"> <a href="#kimchi_beef"> Kimchi Beef </a> </p>
+                    <br>
+                    <!-- Chicken -->
+                    <p class="sub_cat"> Chicken </p>
+                        <p class="list"> <a href="#balsamic_chicken"> Balsamic Chicken </a></p>
+                        <p class="list"> <a href="#chicken_okra_stirfry"> Chicken & Okra Stir Fry </a></p>
+                        <p class="list"> <a href="#japanese_chicken_curry"> Japanese Chicken Curry </a></p>
+                        <p class="list"> <a href="#kimchi_chicken_fried_rice"> Kimchi Chicken Fried Rice </a></p>
+                        <p class="list"> <a href="#chicken_channa_masala"> Shortcut Chicken Channa Masala </a></p>
+                        <p class="list"> <a href="#herb_chicken_marinade"> Herb Chicken Marinade </a></p>
+                        <p class="list"> <a href="#korean_spicy_chicken_marinade"> Korean Spicy Chicken Marinade </a></p>
+                        <p class="list"> <a href="#soy_sauce_chicken"> Soy Sauce Chicken Marinade </a></p>
+                    <br>
+                    <!-- Pork -->
+                    <p class="sub_cat"> Pork </p>
+                        <p class="list"> <a href="#pork_roll"> Mushroom & Scallion Pork Rolls </a></p>
+                        <p class="list"> <a href="#sacha_pork"> Sa Cha Pork Marinade </a></p>
+                        <p class="list"> <a href="#soy_sauce_ground_pork"> Soy Sauce Ground Pork Marinade </a></p>
+                    <br>
+                    <!-- Tofu -->
+                    <p class="sub_cat"> Tofu </p>
+                        <p class="list"> <a href="#mapo_tofu"> Mapo Tofu </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="to_top" href="#top_page">  &#8593; </a>
+
+    <!-- Footer -->
+	<footer>
+		<p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> by Kristi Yang | <a href="credit.html"> Credits Page </a></p>
+	</footer>
+</body>
+</html>

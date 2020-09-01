@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/recipe.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <!-- Javascript -->  
+    <script src="javascript/recipeSearch.js"></script>
+	<title> Kristi's Cookbook | Soup </title>
+</head>
+<body onload="loadRecipes()">
+	<!-- Header -->
+	<header id="top_page">
+        <br>
+	</header>
+	
+	<!-- Nav -->
+	<div id="top">
+        <a href="index.html"> <img src="images/small_logo.jpg" alt="Kristi's Cookbook"></a>
+	<nav>
+    <div class="decor_bar">
+        <br>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html"> About </a>
+        <a href="resources.html">Resources</a>
+        <div class="dropdown">
+            <a href="all_recipes.html">Recipes</a>
+            <div class="categories">
+                <a href="breakfast.html"> Breakfast </a>
+                <a href="desserts.html">Desserts</a>
+                <a href="drinks.html"> Drinks </a>
+                <a href="meat.html">Meat & Tofu </a>
+                <a href="pasta.html">Pasta & Noodles</a>
+                <a href="seafood.html"> Seafood </a>
+                <a href="snacks.html">Snacks</a>
+                <a href="soup.html"> Soups</a>
+                <a href="vegetables.html"> Vegetables</a>
+            </div>
+        </div>
+        <a href="blog.html"> Blog </a>
+    </div>
+	</nav>
+    </div>
+    <div class="decor_bar">
+        <br>
+    </div>
+
+    <!-- Begin Content-->
+    <!-- Mobile Nav -->
+    <button id="bttnMobileNav" onclick="openMobile()"> <span></span><span></span><span></span> </button>
+    <div id="mobileNav">
+        <button id="bttnMobileClose" onclick="closeMobile()"> &#10006; </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><button onclick="mobiledrop()"> Recipes&#9662; </button></li>
+                <ul id="mobileCat">
+                    <li><a href="all_recipes.html">Recipe Index</a></li>
+                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="desserts.html">Desserts</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                    <li><a href="meat.html">Meat & Tofu</a></li>
+                    <li><a href="pasta.html">Pasta & Noodles</a></li>
+                    <li><a href="seafood.html">Seafood</a></li>
+                    <li><a href="soup.html">Soups</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                </ul>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <!-- Main Column (left) -->
+        <div class="column main">
+            <!-- Mobile Search Bar -->
+            <div class="mobile">
+                <img id="mobileIcon" src="images/icons/search-icon.jpg">
+                <input id="mobileSearch" list="recipeList" name="mobileSearch" placeholder="Search..." oninput="mobileSearch()">
+                <datalist id="recipeList"></datalist>
+            </div>
+            <!-- Cauliflower Soup -->
+            <div class="recipe" id="cauliflower_soup">
+                <p class="name"> Cauliflower Soup </p>
+                <p class="serving"> Serving Size: about 2 qts </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> &frac12; of a cauliflower or 1 bag of cauliflower florets </li>
+                    <li> 1 can of chicken broth </li>
+                    <li> 10-20 assorted Chinese fish balls (福州魚丸, 魚包蛋, 魚豆腐)</li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step</p>
+                <ol class="steps">
+                    <li> Wash and chop up the cauliflower into florets. </li>
+                    <li> Rinse the assorted fish balls. </li>
+                    <li> In a pot, add in the cauliflower, fish balls, and chicken broth. </li> 
+                    <li> Fill the pot with cold water until the pot is about &frac34; filled. </li>
+                    <li> Cook the soup on medium heat until it boils. </li>
+                    <li> Add in salt to taste and serve. </li>
+                </ol>
+            </div>
+            <!-- Chicken Noodle Soup -->
+            <div class="recipe" id="chicken_noodle_soup">
+                <p class="name"> Chicken Noodle Soup </p>
+                <p class="serving"> Serving Size: about 3 qts </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> &frac12; lb of <a href="meat.html#herb_chicken_marinade" target="_blank"> Herb Chicken Marinade </a> chicken </li>
+                    <li> 12 oz of noodles (farfalle, fusilli, spaghetti, etc.) </li>
+                    <li> 1 lb of celery hearts </li>
+                    <li> &frac12; lb of carrots </li>
+                    <li> &frac12; white onion </li>
+                    <li> 1&frac12; cup of chicken broth (1 can) </li>
+                    <li> 6 cups of cold water </li>
+                    <li> 1&frac12; tsp of salt </li>
+                    <li> &frac12; tsp of black pepper </li>
+                    <li> &frac12; tsp of oregano </li>
+                    <li> Pinch of dried parsley </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Dice the chicken into &frac14;" cubes. </li>
+                    <li> Marinate the meat using the <a href="meat.html#herb_chicken_marinade" target="_blank"> Herb Chicken Marinade</a>. The marinade recipe is for 1 lb, so cut the ingredient amounts in half.</li>
+                    <li> Peel and dice up the carrots into &frac14;" cubes. </li>
+                    <li> Wash and de-string the celery. Break the celery in half and pull to remove the strings. </li>
+                    <li> Chop the celery into &frac12;" thick slices. </li>
+                    <li> Dice the onions into &frac14;" cubes </li>
+                    <li> In a pan, heat up 1 spatulas worth of oil. </li>
+                    <li> Once the oil is warmed, cook the chicken on medium heat for about 4-6 minutes until ready. Then, set aside. </li>
+                    <li> Using the same pan, add in another &frac12; spatuals worth of oil. </li>
+                    <li> On medium heat, saute the onions until they are translucent. </li>
+                    <li> Place the carrots, celery, and cooked onions into a pot. </li>
+                    <li> Add in the chicken broth and cold water. </li>
+                    <li> Cover and cook the pot on medium heat until it boils. </li>
+                    <li> Once boiled, turn to medium low heat and add in the cooked chicken. </li>
+                    <li> Add in salt, pepper, oregano, parsley, and noodles. </li>
+                    <li> Stir and cover. Let it cook until it boils again. </li>
+                    <li> Once boiled, taste and adjust seasoning if needed. </li>
+                </ol>
+            </div>
+            <!-- Clam Chowder -->
+            <!-- <div class="recipe" id="clam_chowder">
+                <p class="name"> Clam Chowder </p>
+                <p class="serving"> Serving Size: about 2 qts </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> 2 &frac12; lbs of clam (about 36 of them) </li>
+                    <li> &frac12; of an onion </li>
+                    <li> 3 yukon gold potatoes </li>
+                    <li> 7 pieces of bacon </li>
+                    <li> &frac14; cup of butter (&frac12; a stick) </li>
+                    <li> &frac14; cup of white wine </li>
+                    <li> 1 tsp of black pepper </li>
+                    <li> &frac12; tsp of oregano </li>
+                    <li> &frac12; tsp of salt </li>
+                    <li> 1 cup of half and half </li>
+                    <li> &frac12; cup of water </li> 
+                    <li> 1 tbsp of flour </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Throughly wash the clams. </li>
+                    <li> On medium heat, steam the clams with 1 cup of water and cover for about 10-15 minutes. </li>
+                    <li> Once the clams open up, place in a separate plate to cool and keep the water for later. </li>
+                    <li> Dice the potatoes and onions. </li>
+                    <li> Chop up the bacon. </li>
+                    <li> In a pot, melt the butter on low heat. </li> 
+                    <li> Once melted, put in the bacon and cook on medium heat. </li>
+                    <li> Add the leftover water from steaming the clams, potatoes, onions, and white wine. Cook until the alcohol goes away. </li>
+                    <li> Pour in the half and half, salt, pepper, and oregano. </li>
+                    <li> Simmer on medium low heat until soup boils. </li>
+                    <li> Remove clams from shell and slice each in half. </li>
+                    <li> Add in the clams to the soup. </li> 
+                    <li> Stir and let sit for 2-3 minutes. </li> 
+                    <li> Enjoy with oyster crackers! </li>
+                </ol>
+            </div> -->
+             <!-- Slow Cooker Chili -->
+             <div class="recipe" id="chili">
+                <p class="name"> Slow Cooker Chili </p>
+                <p class="serving"> Serving Size: 3 qts </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> 2 lbs of ground beef (1 lb of 80/20 and 1 lb of 90/10) </li>
+                    <li> 1 sweet onion </li>
+                    <li> 1 tomato </li>
+                    <li> 15.5 oz of black beans (1 can) </li>
+                    <li> 28 oz of tomato puree (3 cups) </li>
+                    <li> 3 tsp of chili powder </li>
+                    <li> 2 tsp of paprika </li>
+                    <li> 1&frac12; tsp of garlic powder </li>
+                    <li> 1 tsp of salt </li>
+                    <li> 1 tsp of black pepper </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Dice the onion. </li>
+                    <li> In a pan, add in one spatula worth of oil. </li>
+                    <li> On medium heat, add in the onion. Sprinkle a bit of salt to help cook. </li>
+                    <li> When the onions are 50% cooked, add in the ground beef. </li>
+                    <li> Sprinkle in some salt and black pepper. </li>
+                    <li> Cook on medium heat. </li>
+                    <li> When done, strain out the oil and add into the pot. </li> 
+                    <li> Dice the tomato and place into the pot. </li>
+                    <li> Add in the black beans, tomato puree, chili, paprika, garlic powder, salt, and black pepper. </li>
+                    <li> Mix and then place into slow cooker. </li>
+                    <li> Let it simmer on low for 4-6 hours. </li> 
+                    <li> When it boils, taste and adjust if needed. </li>
+                    <li> Garnish with toppings (shredded cheese, green onion, tortilla chips). </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Side Column (right) -->
+        <div class="column side">
+            <!-- Recipe List -->
+            <div class="sticky_side">
+             <!-- Search Bar -->
+             <div class="searchbar">
+                <input id="inputSearch" type="text" name="searchBar" placeholder="Search..." onkeyup="search()">
+            </div>
+            <p class="list_heading"> Soup Recipe List </p>
+                <div class="recipe_list">
+                    <p class="list"> <a href="#cauliflower_soup"> Cauliflower Soup </a></p>
+                    <p class="list"> <a href="#chicken_noodle_soup"> Chicken Noodle Soup </a></p>
+                    <!-- <p class="list"><a href="#clam_chowder"></a> Clam Chowder </a></p> -->
+                    <p class="list"><a href="#chili"> Slow Cooker Chili </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="to_top" href="#top_page">  &#8593; </a>
+
+    <!-- Footer -->
+	<footer>
+		<p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> by Kristi Yang | <a href="credit.html"> Credits Page </a></p>
+	</footer>
+</body>
+</html>

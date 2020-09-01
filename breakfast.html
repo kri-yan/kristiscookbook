@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/recipe.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <!-- JAVASCRIPT --> 
+    <script src="javascript/recipeSearch.js"></script>
+	<title> Kristi's Cookbook | Breakfast </title>
+</head>
+<!-- Body On Page Load will run loadRecipes() function -->
+<body onload="loadRecipes()">
+	<!-- Header -->
+	<header id="top_page">
+        <br>
+	</header>
+	
+	<!-- Nav -->
+	<div id="top">
+        <a href="index.html"><img src="images/small_logo.jpg" alt="Kristi's Cookbook"></a>
+	<nav>
+    <div class="decor_bar">
+        <br>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html"> About </a>
+        <a href="resources.html">Resources</a>
+        <div class="dropdown">
+            <a href="all_recipes.html">Recipes</a>
+            <div class="categories">
+                <a href="breakfast.html"> Breakfast </a>
+                <a href="desserts.html">Desserts</a>
+                <a href="drinks.html"> Drinks </a>
+                <a href="meat.html">Meat & Tofu </a>
+                <a href="pasta.html">Pasta & Noodles</a>
+                <a href="seafood.html"> Seafood </a>
+                <a href="snacks.html">Snacks</a>
+                <a href="soup.html"> Soups</a>
+                <a href="vegetables.html"> Vegetables</a>
+            </div>
+        </div>
+        <a href="blog.html"> Blog </a>
+    </div>
+	</nav>
+    </div>
+    <div class="decor_bar">
+        <br>
+    </div>
+
+    <!-- Begin Content -->
+     <!-- Mobile Nav -->
+     <button id="bttnMobileNav" onclick="openMobile()"> <span></span><span></span><span></span> </button>
+     <div id="mobileNav">
+         <button id="bttnMobileClose" onclick="closeMobile()"> &#10006; </button>
+         <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="resources.html">Resources</a></li>
+             <li><button onclick="mobiledrop()"> Recipes&#9662; </button></li>
+                 <ul id="mobileCat">
+                     <li><a href="all_recipes.html">Recipe Index</a></li>
+                     <li><a href="breakfast.html">Breakfast</a></li>
+                     <li><a href="desserts.html">Desserts</a></li>
+                     <li><a href="drinks.html">Drinks</a></li>
+                     <li><a href="meat.html">Meat & Tofu</a></li>
+                     <li><a href="pasta.html">Pasta & Noodles</a></li>
+                     <li><a href="seafood.html">Seafood</a></li>
+                     <li><a href="soup.html">Soups</a></li>
+                     <li><a href="snacks.html">Snacks</a></li>
+                     <li><a href="vegetables.html">Vegetables</a></li>
+                 </ul>
+             <li><a href="blog.html">Blog</a></li>
+         </ul>
+     </div>
+    <div class="row">
+        <!-- Main Column (left) -->
+        <div class="column main">
+            <!-- Mobile Search Bar -->
+            <div class="mobile">
+                <img id="mobileIcon" src="images/icons/search-icon.jpg">
+                <input id="mobileSearch" list="recipeList" name="mobileSearch" placeholder="Search..." oninput="mobileSearch()">
+                <datalist id="recipeList"></datalist>
+            </div>
+            <!-- Biscuits -->
+            <div class="recipe" id="biscuits">
+                <p class="name"> Biscuits </p>
+                <p class="serving"> Serving Size: 15 biscuits </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> 2 cups of flour </li>
+                    <li> 1 tbsp of baking powder </li>
+                    <li> 1 tsp of salt </li>
+                    <li> 6 tbsp of cold butter </li>
+                    <li> 1 cup of milk </li>
+                    <li> 1 tbsp of honey </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Cut the butter into 1" cubes and then place back into the fridge to keep cold. </li>
+                    <li> In a bowl, mix together the flour, baking powder, and salt. </li>
+                    <li> Take the cubed butter and place into the flour mixture. </li>
+                    <li> Using a pastry cutter or a fork, cut the butter into the flour mixture. The mixture will be crumbly and have small clumps of butter that do not completely mix in. </li>
+                    <li> Make a well in the mixture by forming a hole in the middle of the dough. </li>
+                    <li> Pour the mlik and the honey into the well. </li>
+                    <li> Gently mix the wet ingredients into the mixture so that the dough forms. </li>
+                    <li> Roll out the dough using your hands or a rolling pin so that it is about &frac12;" thick. </li>
+                    <li> Fold the dough in thirds (letter fold) by first folding &frac13; of the dough from one side to the center and then folding the other &frac13; on top.</li>
+                    <li> Turn the dough so that the folds are horizontal. </li>
+                    <li> Repeat steps 8-10 another two times so that you would have folded the dough for a total of 3 times. </li>
+                    <li> Roll out the dough so that it is &frac12;" thick. </li>
+                    <li> Preheat the oven to 425&deg;F.</li>
+                    <li> Cut the dough with a round cutter and place on a baking sheet. </li>
+                    <li> Slightly press the top of each biscuit so that there is a small dent. This will help the biscuits rise evenly. </li>
+                    <li> Optional: brush the top of each biscuit with milk. </li>
+                    <li> Bake for 15-20 minutes until the biscuits rise. </li>
+                    <li> Let cool before serving. </li>
+                </ol>
+            </div>
+            <!-- Cherry Jam -->
+            <div class="recipe" id="cherry_jam">
+                <p class="name"> Cherry Jam </p>
+                <p class="serving"> Serving Size: &frac12; pint </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> 2 cups of cherries (16 oz) </li>
+                    <li> 2 tbsp of lemon juice</li>
+                    <li> 2 tbsp of sugar </li>
+                    <li> 2 tbsp of pectin </li>
+                    <li> Optional: glass jar </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Wash the cherries and remove the pits. Place into a pot </li>
+                    <li> Mash the cherries and then place on stove. </li>
+                    <li> Cook the cherries on low heat and then add in the lemon juice and sugar. </li>
+                    <li> Keep stiring and cook the jam until it boils. </li>
+                    <li> Once the jam boils, add in the pectin and stir. </li>
+                    <li> When it boils again, place into a jar and let it cool. </li>
+                </ol>
+                <br>
+                <p class="lbl"> For Vacuum Sealing </p>
+                <ol class="steps"> 
+                    <li> Fill a pot with cold water and place the glass jar flat on it side in the pot. </li> 
+                    <li> Add more cold water until the jars are submerged. </li>
+                    <li>Cover the pot and cook on low heat. Make sure that it is low heat so that the glass does not shatter. </li>
+                    <li> Once the water boils, let it cook for 5 minutes. </li>
+                    <li> Using gloves and tongs, immediately remove and quickly dry off the water from the jar. Be careful as the jars will be extremely hot. </li>
+                    <li> Quickly fill the jar with the hot peach jam (should be about boiling temperature) and close immediately. </li>
+                    <li> Let it sit in room temperature for it to cool. </li>
+                </ol>
+            </div>
+            <!-- Chocolate Chip Muffins -->
+            <div class="recipe" id="chocolate_chip_muffins">
+                <p class="name"> Chocolate Chip Muffins </p>
+                <p class="serving"> Serving Size: 12 muffins </p> 
+                <br>
+                <p class="lbl"> Ingredients</p>
+                <ul class="ingredients">
+                    <li> 2 cups of all purpose flour </li>
+                    <li> 2 tsp of baking powder </li>
+                    <li> &frac12; tsp of salt </li>
+                    <li> &frac13; cup of brown sugar </li>
+                    <li> 1 cup of milk </li>
+                    <li> 1 egg </li>
+                    <li> 1 tsp of vanilla extract </li>
+                    <li> &frac14; cup of vegetable oil </li>
+                    <li> 1 cup of chocolate chips </li> 
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p> 
+                <ol class="steps">
+                    <li> Take out 1 egg and let it sit so that it becomes room temperature. </li>
+                    <li> In a mixing bowl, mix together the flour, baking powder, and salt. </li>
+                    <li> In a separate bowl, add together the milk, egg, sugar, vanilla, and vegetable oil. </li>
+                    <li> In 3 parts, add the wet ingredients into the dry ingredients. </li>
+                    <li> Mix, but do not overmix. The batter should be lumpy. </li>
+                    <li> Add in 1 cup of chocolate chips and stir in. </li>
+                    <li> Preheat the oven to 425&deg;F. </li>
+                    <li> Either butter each tin, use cooking spray to spray each tin, or line each tin with a muffin liner. </li>
+                    <li> Pour in the batter, filling it about &frac34; full. </li>
+                    <li> Place the muffins in the preheated oven and then turn oven down to 375&deg;F. </li>
+                    <li> Bake for about 20 minutes. The top of the muffins should have some golden brown. Test by inserting a toothpick. If the toothpick is dry, it is ready. </li>
+                    <li> Let it cool and then enjoy! </li>
+                </ol>
+            </div>
+            <!-- French Toast -->
+            <div class="recipe" id="french_toast">
+                <p class="name"> French Toast </p>
+                <p class="serving"> Serving Size: ## pieces </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> # pieces of brioche bread </li>
+                    <li> 1 egg </li>
+                    <li> &frac14; cup of milk </li>
+                    <li> 1 tsp of vanilla extract </li> 
+                    <li> 1 tsp of cinnamon </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Whisk together the egg, milk, vanilla extract, and cinnamon. </li>
+                    <li> Pour the egg mixture into a shallow dish for dipping. </li>
+                    <li> Take a slice of bread and dip both sides into the egg mixture. </li>
+                    <li> Place some butter in the pan and warm it on low heat. </li>
+                    <li> Once the pan is warm, place a piece of bread on medium heat. </li> 
+                    <li> Cook each side until golden brown. </li>
+                    <li> Serve with maple syrup, whipped cream, and/or fruit. </li> 
+                </ol>
+            </div>
+            <!-- Peach Preserves -->
+            <div class="recipe" id="peach_preserves">
+                <p class="name"> Peach Preserves </p>
+                <p class="serving"> Serving Size: 2 pints </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> 5 cups of sliced peaches (about 5-6 peaches) </li>
+                    <li> 2 tbsp of lemon juice (about &frac14; of a lemon) </li>
+                    <li> &frac14; cup of sugar </li>
+                    <li> 1&frac12; tbsp of pectin </li>
+                    <li> Optional: Glass Jar </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Peel of the skin and remove the pit from the peaches. </li>
+                    <li> Slice the peaches and place into a pot. </li>
+                    <li> Mash the peaches and then place on stove. </li>
+                    <li> Cook the peaches on low heat and then add in the lemon juice and sugar. </li>
+                    <li> Keep stiring and cook the jam until it boils. </li>
+                    <li> Once the jam boils, add in the pectin and stir. </li>
+                    <li> When it boils again, place into a jar and let it cool. </li>
+                </ol>
+                <br>
+                <p class="lbl"> For Vacuum Sealing </p>
+                <ol class="steps"> 
+                    <li> Fill a pot with cold water and place the glass jar flat on it side in the pot. </li> 
+                    <li> Add more cold water until the jars are submerged. </li>
+                    <li>Cover the pot and cook on low heat. Make sure that it is low heat so that the glass does not shatter. </li>
+                    <li> Once the water boils, let it cook for 5 minutes. </li>
+                    <li> Using gloves and tongs, immediately remove and quickly dry off the water from the jar. Be careful as the jars will be extremely hot. </li>
+                    <li> Quickly fill the jar with the hot peach jam (should be about boiling temperature) and close immediately. </li>
+                    <li> Let it sit in room temperature for it to cool. </li>
+                </ol>
+            </div>
+            <!-- Raspberry Jam -->
+            <div class="recipe" id="raspberry_jam">
+                <p class="name"> Raspberry Jam </p>
+                <p class="serving"> Serving Size: 1 pint </p>
+                <br>
+                <p class="lbl"> Ingredients </p>
+                <ul class="ingredients">
+                    <li> 3 cups of raspberries (12 oz) </li>
+                    <li> &frac14; cup of sugar </li>
+                    <li> 1&frac12; tbsp of pectin </li>
+                    <li> Optional: Glass Jar </li>
+                </ul>
+                <br>
+                <p class="lbl"> Step by Step </p>
+                <ol class="steps">
+                    <li> Wash the raspberries and then place into a pot </li>
+                    <li> Mash the raspberries and then place on stove. </li>
+                    <li> Cook the raspberries on low heat and then add in the sugar. </li>
+                    <li> Keep stiring and cook the jam until it boils. </li>
+                    <li> Once the jam boils, add in the pectin and stir. </li>
+                    <li> When it boils again, place into a jar and let it cool. </li>
+                </ol>
+                <br>
+                <p class="lbl"> For Vacuum Sealing </p>
+                <ol class="steps"> 
+                    <li> Fill a pot with cold water and place the glass jar flat on it side in the pot. </li> 
+                    <li> Add more cold water until the jars are submerged. </li>
+                    <li>Cover the pot and cook on low heat. Make sure that it is low heat so that the glass does not shatter. </li>
+                    <li> Once the water boils, let it cook for 5 minutes. </li>
+                    <li> Using gloves and tongs, immediately remove and quickly dry off the water from the jar. Be careful as the jars will be extremely hot. </li>
+                    <li> Quickly fill the jar with the hot peach jam (should be about boiling temperature) and close immediately. </li>
+                    <li> Let it sit in room temperature for it to cool. </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Side Column (right) -->
+        <div class="column side">
+            <!-- Recipe List -->
+            <div class="sticky_side">
+                <!-- Search Bar -->
+                <div class="searchbar">
+                    <input id="inputSearch" type="text" name="searchBar" placeholder="Search..." onkeyup="search()">
+                </div>
+                <p class="list_heading"> Breakfast Recipe List </p>
+                <div class="recipe_list">
+                    <p class="list"> <a href="#biscuits"> Biscuits </a></p>
+                    <p class="list"> <a href="#cherry_jam"> Cherry Jam </a></p>
+                    <p class="list"> <a href="#chocolate_chip_muffins"> Chocolate Chip Muffins </a></p>
+                    <p class="list"> <a href="#french_toast"> French Toast </a></p>
+                    <p class="list"> <a href="#peach_preserves"> Peach Preserves </a></p>
+                    <p class="list"> <a href="#raspberry_jam"> Raspberry Jam </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="to_top" href="#top_page">  &#8593; </a>
+
+    <!-- Footer -->
+	<footer>
+		<p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> by Kristi Yang | <a href="credit.html"> Credits Page </a></p>
+	</footer>
+</body>
+</html>

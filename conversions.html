@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/conversions.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <!-- Javascript -->  
+    <script src="javascript/conversion.js"></script>
+	<title> Kristi's Cookbook | Conversions </title>
+</head>
+<body>
+	<!-- Header -->
+	<header id="top_page">
+        <br>
+	</header>
+	
+	<!-- Nav -->
+	<div id="top">
+        <a href="index.html"> <img src="images/small_logo.jpg" alt="Kristi's Cookbook"></a>
+	<nav>
+    <div class="decor_bar">
+        <br>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html"> About </a>
+        <a href="resources.html">Resources</a>
+        <div class="dropdown">
+            <a href="all_recipes.html">Recipes</a> 
+            <div class="categories">
+                <a href="breakfast.html"> Breakfast </a>
+                <a href="desserts.html">Desserts</a>
+                <a href="drinks.html"> Drinks </a>
+                <a href="meat.html">Meat & Tofu </a>
+                <a href="pasta.html">Pasta & Noodles</a>
+                <a href="seafood.html"> Seafood </a>
+                <a href="soup.html"> Soups</a>
+                <a href="snacks.html">Snacks</a>
+                <a href="vegetables.html"> Vegetables</a>
+            </div>
+        </div>
+        <a href="blog.html"> Blog </a>
+    </div>
+	</nav>
+    </div>
+    <div class="decor_bar">
+        <br>
+    </div>
+
+    <!-- Begin Content -->
+    <div class="single">
+    <!-- Mobile Nav -->
+    <button id="bttnMobileNav" onclick="openMobile()"> <span></span><span></span><span></span> </button>
+    <div id="mobileNav">
+        <button id="bttnMobileClose" onclick="closeMobile()"> &#10006; </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><button onclick="mobiledrop()"> Recipes&#9662; </button></li>
+                <ul id="mobileCat">
+                    <li><a href="all_recipes.html">Recipe Index</a></li>
+                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="desserts.html">Desserts</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                    <li><a href="meat.html">Meat & Tofu</a></li>
+                    <li><a href="pasta.html">Pasta & Noodles</a></li>
+                    <li><a href="seafood.html">Seafood</a></li>
+                    <li><a href="soup.html">Soups</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                </ul>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+    <!-- Title of Page -->
+        <h1 class="title"> Conversions </h1>
+        <p class="description"> Common measurements that need converting! </p>
+    </div>
+    <!-- Volume -->
+    <div class="row">
+        <!-- Main Content Box-->
+        <div id="volume" class="main box">
+            <p class="subheading"> Volume Converter </p>
+            <!-- Volume 1 Input -->
+            <div id="vol1_box" class="inputBox">
+                <input type="text" inputmode=decimal id="inputVol1" class="input" oninput="convert('inputVol1', 'inputVol2', 'volMsg')">
+                <select id="optionVol1" class="unitOptions" onchange="convert('inputVol1', 'inputVol2', 'volMsg')">
+                    <optgroup label="Customary">
+                        <option value="tsp" selected> Teaspoons (tsp) </option>
+                        <option value="tbsp"> Tablespoons (tbsp) </option>
+                        <option value="cup"> Cups (c) </option>
+                        <option value="pt"> Pints (pt) </option>
+                        <option value="qt"> Quarts (qt) </option>
+                        <option value="gal"> Gallons (gal) </option>
+                    </optgroup>
+                    <optgroup label="Metric">
+                        <option value="mL"> Milliliters (mL) </option>
+                        <option value="liter"> Liters (L) </option>
+                    </optgroup>
+                </select>
+            </div>
+            <!-- Equal-->
+            <div class="equal">
+                <p> &#61; </p>
+            </div>
+            <!-- Volume 2 Input-->
+            <div id="vol2_box" class="inputBox">
+                <input type="text" inputmode=decimal id="inputVol2" class="input" oninput="convert('inputVol2', 'inputVol1', 'volMsg')">
+                <select id="optionVol2" class="unitOptions" onchange="convert('inputVol2', 'inputVol1', 'volMsg')">
+                    <optgroup label="Customary">
+                        <option value="tsp"> Teaspoons (tsp) </option>
+                        <option value="tbsp" selected> Tablespoons (tbsp) </option>
+                        <option value="cup"> Cups (c) </option>
+                        <option value="pt"> Pints (pt) </option>
+                        <option value="qt"> Quarts (qt) </option>
+                        <option value="gal"> Gallons (gal) </option>
+                    </optgroup>
+                    <optgroup label="Metric">
+                        <option value="mL"> Milliliters (mL) </option>
+                        <option value="liter"> Liters (L) </option>
+                    </optgroup>
+                </select>
+            </div>
+            <!-- Error Message -->
+            <p id="volMsg" class="msg"></p>
+        </div>
+        <!-- Icon Box -->
+        <div class="icon box right">
+            <img src="images/icons/volume_icon.jpg">
+        </div>
+    </div>
+    <!-- Weight -->
+    <div class="row">
+        <!-- Icon Box -->
+        <div class="icon box left">
+            <img src="images/icons/weight_icon.jpg">
+        </div>
+        <!-- Main Content Box-->
+        <div id="weight" class="main box">
+            <p class="subheading"> Weight Converter </p>
+            <!-- Weight 1 Input -->
+            <div id="weight1_box" class="inputBox">
+                <input type="text" inputmode=decimal id="inputWeight1" class="input" oninput="convert('inputWeight1', 'inputWeight2', 'weightMsg')">
+                <select id="optionWeight1" class="unitOptions" onchange="convert('inputWeight1', 'inputWeight2', 'weightMsg')">
+                    <optgroup label="Customary">
+                        <option value="oz" selected> Ounces (oz) </option>
+                        <option value="lb"> Pounds (lbs) </option>
+                    </optgroup>
+                    <optgroup label="Metric">
+                        <option value="g"> Grams (g) </option>
+                    </optgroup>
+                </select>
+            </div>
+            <!-- Equal-->
+            <div class="equal">
+                <p> &#61; </p>
+            </div>
+            <!-- Weight 2 Input-->
+            <div id="weight2_box" class="inputBox">
+                <input type="text" inputmode=decimal id="inputWeight2" class="input" oninput="convert('inputWeight2', 'inputWeight1', 'weightMsg')">
+                <select id="optionWeight2" class="unitOptions" onchange="convert('inputWeight2', 'inputWeight1', 'weightMsg')">
+                    <optgroup label="Customary">
+                        <option value="oz"> Ounces (oz) </option>
+                        <option value="lb" selected> Pounds (lbs) </option>
+                    </optgroup>
+                    <optgroup label="Metric">
+                        <option value="g"> Grams (g) </option>
+                    </optgroup>
+                </select>
+            </div>
+            <!-- Error Message -->
+            <p id="weightMsg" class="msg"></p>
+        </div>
+
+    </div>
+    <!-- Temperature -->
+    <div class="row">
+        <!-- Main Content Box-->
+        <div id="temperature" class="main box">
+            <p class="subheading"> Temperature Converter </p>
+            <!-- Temperature 1 Input -->
+            <div id="temp1_box" class="inputBox">
+                <input type="text" inputmode=decimal id="inputTemp1" class="input" oninput="convert('inputTemp1', 'inputTemp2', 'tempMsg')">
+                <select id="optionTemp1" class="unitOptions" onchange="convert('inputTemp1', 'inputTemp2', 'tempMsg')">
+                    <option value="degF" selected> Fahrenheit (&deg;F) </option>
+                    <option value="degC"> Celsius (&deg;C) </option>
+                </select>
+            </div>
+            <!-- Equal-->
+            <div class="equal">
+                <p> &#61; </p>
+            </div>
+            <!-- Temperature 2 Input-->
+            <div id="temp2_box" class="inputBox">
+                <input type="text" inputmode=decimal id="inputTemp2" class="input" oninput="convert('inputTemp2', 'inputTemp1', 'tempMsg')">
+                <select id="optionTemp2" class="unitOptions" onchange="convert('inputTemp2', 'inputTemp1', 'tempMsg')">
+                    <option value="degF"> Fahrenheit (&deg;F) </option>
+                    <option value="degC" selected> Celsius (&deg;C) </option>
+                </select>
+            </div>
+            <!-- Error Message -->
+            <p id="tempMsg" class="msg"></p>
+        </div>
+        <!-- Icon Box -->
+        <div class="icon box right">
+            <img src="images/icons/temperature_icon.jpg">
+        </div>
+    </div>
+    <!-- Cups to Grams-->
+    <div class="row">
+        <!-- Icon Box -->
+        <div class="icon box left">
+            <img src="images/icons/ingredients_icon.jpg">
+        </div>
+        <!-- Main Content Box -->     
+        <div id="ctog" class="main box">
+            <p class="subheading"> Cups to Grams Converter </p>
+            <!-- Ingredient Options -->
+            <div class="ingredient_box">
+                <select id="ingredient" onchange="ctg_convert('inputC', 'inputG')">
+                    <optgroup label="Powders">
+                        <option value="ap_flour" selected> All-Purpose Flour </option>
+                        <option value="cake_flour"> Cake Flour </option>
+                        <option value="cocoa_powder"> Cocoa Powder </option>
+                        <option value="matcha_powder"> Matcha Powder </option>
+                    </optgroup>
+                    <optgroup label="Sugar & Sweeteners">
+                        <option value="brown_sugar"> Brown Sugar </option>
+                        <option value="white_sugar"> White Sugar (Granulated) </option>
+                        <option value="syrup"> Honey, Molasses, Syrup </option>
+                    </optgroup>
+                    <optgroup label="Fats">
+                        <option value="butter"> Butter </option>
+                        <option value="vegetable_oil"> Vegetable Oil </option>
+                    </optgroup>
+                    <optgroup label="Other">
+                        <option value="milk"> Milk </option>
+                    </optgroup>
+                </select>
+            </div>
+             <!-- Cups -->
+             <div id="ctog1_box" class="inputBox">
+                <input type="text" inputmode=decimal name="inputC" id="inputC" class="input" oninput="ctg_convert('inputC', 'inputG')">
+                <label for="inputC"> Cups (c) </label>
+            </div>
+            <!-- Equal -->
+            <div class="equal">
+                <p> &#61; </p>
+            </div>
+            <!-- Grams -->
+            <div id="ctog2_box" class="inputBox">
+                <input type="text" inputmode=decimal name="inputG" id="inputG" class="input" oninput="ctg_convert('inputG', 'inputC')">
+                <label for="inputG"> Grams (g)</label>
+            </div>            
+            <!-- Error Message -->
+            <p id="ctgMsg" class="msg"></p>
+        </div>
+    </div>
+    <!-- Back to Top-->
+    <a class="to_top" href="#top_page">  &#8593; </a>
+
+    <!-- Footer -->
+	<footer>
+		<p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> by Kristi Yang | <a href="credit.html"> Credits Page </a></p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/recommendations.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <!-- Javascript -->  
+    <script src="javascript/recommend.js"></script>
+	<title> Kristi's Cookbook | Recommendations </title>
+</head>
+
+<!-- Body On Page Load will run loadRecipes() function -->
+<body onload="loadRecipes()">
+	<!-- Header -->
+	<header id="top_page">
+        <br>
+	</header>
+	
+	<!-- Nav -->
+	<div id="top">
+        <a href="index.html"><img src="images/small_logo.jpg" alt="Kristi's Cookbook"></a>
+	<nav>
+    <div class="decor_bar">
+        <br>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html"> About </a>
+        <a href="resources.html">Resources</a>
+        <div class="dropdown">
+            <a href="all_recipes.html">Recipes</a> 
+            <div class="categories">
+                <a href="breakfast.html"> Breakfast </a>
+                <a href="desserts.html">Desserts</a>
+                <a href="drinks.html"> Drinks </a>
+                <a href="meat.html">Meat & Tofu </a>
+                <a href="pasta.html">Pasta & Noodles</a>
+                <a href="seafood.html"> Seafood </a>
+                <a href="soup.html"> Soups</a>
+                <a href="snacks.html">Snacks</a>
+                <a href="vegetables.html"> Vegetables</a>
+            </div>
+        </div>
+        <a href="blog.html"> Blog </a>
+    </div>
+	</nav>
+    </div>
+    <div class="decor_bar">
+        <br>
+    </div>
+
+    <!-- Begin Content -->
+    <!-- Mobile Nav -->
+    <button id="bttnMobileNav" onclick="openMobile()"> <span></span><span></span><span></span> </button>
+    <div id="mobileNav">
+        <button id="bttnMobileClose" onclick="closeMobile()"> &#10006; </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><button onclick="mobiledrop()"> Recipes&#9662; </button></li>
+                <ul id="mobileCat">
+                    <li><a href="all_recipes.html">Recipe Index</a></li>
+                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="desserts.html">Desserts</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                    <li><a href="meat.html">Meat & Tofu</a></li>
+                    <li><a href="pasta.html">Pasta & Noodles</a></li>
+                    <li><a href="seafood.html">Seafood</a></li>
+                    <li><a href="soup.html">Soups</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                </ul>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+    <!-- Page Title-->
+    <div class="page_title">
+        <!-- Pop-Out Menu for Mobile -->
+        <button id="popfilter" onclick="showMenu()"> Filter </button>
+        <h1 id="head" class="subheading"> My Recommendations </h1>
+        <p id="subtitle"> Products and brands that I use and love! </p>
+        <hr>
+    </div>
+    <!-- Start 2 column layout-->
+    <div class="row">
+        <!-- Main Column (left) -->
+        <div class="column main">
+            <!-- Premade Pie Crust -->
+            <div id="premade_pie_crust" class="product">
+                <div class="image">
+                    <img src="images/recommend/frozen_pie_crust.jpeg">                    
+                </div>
+                <div class="content">
+                    <p class="name"> Premade Pie Crust </p>
+                    <p class="lbl"> Category: </p> 
+                        <p class="cat info"> Frozen Food </p>
+                    <p class="desc"> I really like using this pie crust. It works well with both sweet and savory dishes. Although it loses its shape and cracks when I unravel it, I just ball up the dough and then roll it out into the shape that I want. It gives it more of a homemade feel and more flexibility with the pan that I want to use. </p>
+                    <br>
+                    <div class="details">    
+                        <p class="lbl"> Brand: </p>
+                        <p class="brand info"> Trader Joe's </p>      
+                        <br>         
+                        <p class="lbl"> Price: </p> 
+                        <p class="price info"> $3.99 </p>
+                        <br>
+                        <p class="lbl"> Where to Buy: </p>
+                        <ul class="where"> 
+                            <li> Trader Joe's</li>
+                        </ul>
+                        <br>
+                        <p class="lbl"> Recipes: </p>
+                        <ul class="recipes">
+                            <li> <a href="desserts.html#lazy_apple_pie" target="_blank" class="exe"> Lazy Apple Pie </a></li>
+                            <li><a href="breakfast.html#quiche" target="_blank" class="exe"> Bacon Broccoli Quiche </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Chili Garlic Sauce -->
+            <div id="chili_garlic_sauce" class="product">
+                <div class="image">
+                    <img src="images/recommend/chili_garlic_sauce.jpeg">                    
+                </div>
+                <div class="content">
+                    <p class="name"> Chili Garlic Sauce (蒜蓉辣椒醬) </p>
+                    <p class="lbl"> Category: </p> 
+                        <p class="cat info"> Sauces </p>
+                    <p class="desc"> This sauce is great to add spice to savory dishes. I mainly use it to make the sauce for many of my Chinese recipes. It pairs really well with soy sauce to enhance the flavor. It can also be used as a sauce on its own for things like dipping sauce for dumplings or topping sauce for wonton soup and noodles. </p>
+                    <br>
+                    <div class="details">    
+                        <p class="lbl"> Brand: </p>
+                        <p class="brand info"> Lee Kum Kee (李錦記) </p>      
+                        <br>         
+                        <p class="lbl"> Price: </p> 
+                        <p class="price info"> $3.99 </p>
+                        <br>
+                        <p class="lbl"> Where to Buy: </p>
+                        <ul class="where"> 
+                            <li> H-mart </li>
+                            <li> Kam Man </li>
+                            <li> 99 Ranch </li> 
+                        </ul>
+                        <br>
+                        <p class="lbl"> Recipes: </p>
+                        <ul class="recipes">
+                            <li> <a href="pasta.html#beef_noodle_soup" target="_blank" class="exe"> Taiwanese Beef Noodle Soup </a></li>
+                            <li><a href="meat.html#mapo_tofu" target="_blank" class="exe"> Mapo Tofu </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Rice Wine -->
+            <div id="rice_wine" class="product">
+                <div class="image">
+                    <img src="images/recommend/rice_wine.jpg">                    
+                </div>
+                <div class="content">
+                    <p class="name"> Rice Wine (米酒) </p>
+                    <p class="lbl"> Category: </p> 
+                        <p class="cat info"> Sauces </p>
+                    <p class="desc"> This rice wine is a staple of Asian cooking. It's used in many different sauces, marinades, and glazes. I use it mostly for meat marinades or to help enhance flavors of dishes. </p>
+                    <br>
+                    <div class="details">    
+                        <p class="lbl"> Brand: </p>
+                        <p class="brand info"> Taiwan (台灣) </p>      
+                        <br>         
+                        <p class="lbl"> Price: </p> 
+                        <p class="price info"> $4.99 </p>
+                        <br>
+                        <p class="lbl"> Where to Buy: </p>
+                        <ul class="where"> 
+                            <li> H-mart </li>
+                            <li> Kam Man </li>
+                            <li> 99 Ranch </li> 
+                        </ul>
+                        <br>
+                        <p class="lbl"> Recipes: </p>
+                        <ul class="recipes">
+                            <li><a href="meat.html#mapo_tofu" target="_blank" class="exe"> Mapo Tofu </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Side Column (right) -->
+        <div class="column side">
+            <!-- Close Menu for Mobile -->
+            <div class="bttnbox">
+                <button id="close" onclick="closeMenu()"> &#10006; </button>
+            </div>
+            <!-- Search Bar Title -->
+            <p class="heading"> Search Products: </p>
+            <!-- Search Bar -->
+            <div class="searchbar">
+                <input id="inputSearch" type="text" name="searchBar" placeholder="Search..." onkeypress="if(event.keyCode == 13) search()">
+                <button type="button" id="bttnSearch" onclick="search()"> <img id=iconSearch src="images/icons/search-icon.jpg"> </button>
+            </div>
+            <div class="searchbttns">
+                <button type="button" id="bttnClear" onclick="clearInput()"> Clear </button>
+                <button type="button" id="bttnShow" onclick="showAll()"> Show All </button>
+            </div>
+            <!-- Search by Recipe -->
+            <p class="heading subhead"> Search by Recipe: </p>
+            <div class="searchRecipe">
+                <input id="recipeInput" list="recipeList" name="recipeInput" placeholder="Search..." onkeypress="if(event.keyCode == 13) searchRecipe()">
+                <datalist id="recipeList"></datalist>
+                <button type="button" id="bttnRecipe" onclick="searchRecipe()"> &rarr; </button>
+            </div>
+            <!-- Filter By Title -->
+            <p class="heading subhead"> Filter By: </p>
+            <!-- Filter by Category -->
+            <p class="filter_lbl"> By Category </p>
+            <div class="filter_box" id="category">
+                <div class="col">
+                    <div class="check">
+                        <input type="checkbox" id="drygood" name="drygood">
+                        <label for="drygood"> Dry Goods </label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="cans" name="cans">
+                        <label for="cans"> Cans </label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="frozenfood" name="frozenfood">
+                        <label for="frozenfood"> Frozen Food </label> 
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="check">
+                        <input type="checkbox" id="sauces" name="sauces">
+                        <label for="sauces"> Sauces </label> 
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="spices" name="spices">
+                        <label for="spices"> Spices </label> 
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="tools" name="tools">
+                        <label for="tools"> Tools </label>
+                    </div>
+                </div>
+            </div>
+            <!-- Filter by Location -->
+            <p class="filter_lbl"> By Where to Buy </p>
+            <div class="filter_box" id="location">
+                <div class="col">
+                    <div class="check">
+                        <input type="checkbox" id="costco" name="costco">
+                        <label for="costco"> Costco </label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="hmart" name="hmart">
+                        <label for="hmart"> H-mart </label> 
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="kamman" name="kamman">
+                        <label for="kamman"> Kam Man </label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="starmarket" name="starmarket">
+                        <label for="starmarket"> Star Market </label> 
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="check">
+                        <input type="checkbox" id="shoprite" name="shoprite">
+                        <label for="shoprite"> ShopRite </label> 
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="traderjoes" name="traderjoes">
+                        <label for="traderjoes"> Trader Joe's </label> 
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="wholefoods" name="wholefoods">
+                        <label for="wholefoods"> Whole Foods </label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="99ranch" name="99ranch">
+                        <label for="99ranch"> 99 Ranch </label>
+                    </div>
+                </div>
+            </div>
+            <!-- Filter Submit Button -->
+            <div class="filterbttns">
+                <button type="button" id="bttnFilter" onclick="filter()"> Filter </button>
+                <button type="button" id="bttnReset" onclick="resetFilter()"> Reset </button>
+            </div>
+        </div>
+    </div>
+    <!-- Back to Top-->
+    <a class="to_top" href="#top_page">  &#8593; </a>
+    <!-- Footer -->
+	<footer>
+		<p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> by Kristi Yang | <a href="credit.html"> Credits Page </a></p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,200 @@
+/* COLOR SCHEME
+yellow = rgb(255, 230, 125)
+ligh yellow for background = rgba(255, 230, 125, 0.3)
+light blue for background = rgba(153, 204, 255, 0.4)
+blue = rgb(153, 204, 255)
+brown = rgb(208, 197, 166)
+dark brown for text = rgb(133, 125, 105)
+light brown background = rgba(208, 197, 166, 0.384)
+light gray = rgb(217, 217, 217)
+dark gray for text = rgb(175, 175, 175)
+cream = rgba(255, 253, 208, 0.35)
+
+IMAGES
+Food images for recipe desc & index formatted as 4:3 and height = 350
+Blog images have width = 425
+*/
+
+*{font-family: 'Lato', sans-serif; margin:0;}
+.subheading{color: rgb(133, 125, 105); font-family: 'Rochester', cursive; font-size: 2.5rem; letter-spacing: 0.02em;}
+.row{background-color: rgba(153, 204, 255, 0.4);}
+
+/* HEADER */
+header{background-color: rgb(208, 197, 166);}
+
+/* TOP LOGO */
+#top{height: 10%;}
+#top img{display: block; height: auto; margin-left: auto; margin-right: auto; margin-bottom: 1.5%;margin-top: 1%; max-width: 40%;}
+.decor_bar{background-color: rgb(217, 217, 217); clear: both; line-height: 20%;}
+
+/* NAV */
+nav{background-color: rgba(255, 230, 125, 0.2);}
+.navbar {display: flex; justify-content: center; padding-bottom: 0.5%; padding-top: 0.5%; text-align: center;} 
+nav a{color: rgb(133, 125, 105); display: block; font-size: 1.1rem; font-weight: bold; padding: 0 2.5%; text-decoration: none; text-transform: uppercase;}
+nav a:hover{color: rgb(153, 204, 255);}
+/* Subnav */
+.dropdown{padding: 0 2.5%;}
+.categories{background-color: white; border-color: rgb(217, 217, 217); border-style: solid; display: none; position: absolute; z-index: 1000;}
+.categories a{color: rgb(208, 197, 166); display: block; float: none; font-size: 1.1rem; font-weight: bold; padding-top: 1%; padding-bottom: 1%; text-align: left; text-decoration: none;}
+.dropdown:hover .categories{display: block;} 
+
+/* BACK TO TOP */
+.to_top{background-color: rgba(255, 230, 125, 0.3); border-color: rgb(217, 217, 217); border-radius: 50%; border-style: ridge; border-width: thin; bottom: 4%; box-shadow: 0 4px 8px 0 gray, 0 2px 10px 0 gray; color: rgb(133, 125, 105); font-size: 2.5vw; font-weight: bold; padding: 0.25% 1.5% 1%; position: fixed; right: 12%; text-decoration: none; z-index: 1000;}
+.to_top:hover{opacity: 0.7;}
+
+/*2 COLUMN LAYOUT */
+.row{display: flex;}
+.column{background-color: white; float: left; padding: 1.5% 1%;}
+.main{margin-left: 4%; width: 61%;}
+.side{border-color: rgba(153, 204, 255, 0.2); border-left-style: solid; border-left-width: 2vw; margin-right: 4%; width: 31%;}
+.row:after{clear:both;}
+
+/* FOR DESIGN ONLY */
+/* .row{border-style: solid; border-color: green;}
+.column{border-style: solid;}
+.main{border-color: blue;}
+.side{border-color: red;} */
+
+/* SLIDESHOW/CAROUSEL */
+.instagram{display: inline; margin-left: 15%; scale: (1.0);}
+div.latest_images .subheading{float: left;}
+.latest_images{align-items: center; display: flex;  margin-bottom: 2%; margin-left: 2%;}
+div.slideshow{margin: auto; position: relative;}
+div.myPhotos{background-color: rgba(255, 230, 125, 0.3); box-shadow: 0 0.3em 0.75em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19); display: none; margin-left: auto; margin-right: auto; width: 75%;}
+div.myPhotos .text{background-color: rgba(255, 230, 125, 0.5); color: rgb(133, 125, 105); font-family: inherit; font-size: 1.1rem; font-weight: bold; padding: 4% 8%; position: relative; text-align: center; text-transform: uppercase;}
+div.myPhotos img{display: block; margin: auto; max-height: 85%; max-width: 85%; scale:(1.0);}
+.image{display: flex; justify-content: center; text-decoration: none;}
+
+.prev, .next{color: rgb(208, 197, 166); cursor: pointer; font-size: 3.5rem; font-weight: bold; padding: 4%; position: absolute; top: 25%; transition: 0.6s ease; user-select: none; width: auto;}
+.prev:hover, .next:hover{background-color: rgba(217, 217, 217, 0.473);}
+.next{right: 0;}
+
+.fade{-webkit-animation-name: fade; -webkit-animation-duration: 1.5s; animation-name: 1.5s; animation-duration: 1.5s;}
+@-webkit-keyframes fade{from{opacity: 0.4} to {opacity: 1}}
+@keyframes fade{from{opacity: 0.4} to {opacity: 1}}
+
+/* ABOUT THE SITE */
+.about_site .subheading{margin-bottom: 3%; margin-left: 2%; margin-top: 5%;}
+.about_site p{color: rgb(133, 125, 105); font-size: 1.05rem; line-height: 120%; margin-bottom: 2%; margin-left: 2%; margin-right: 5%; text-align: justify;}
+#read{background-color: white; border-style: none; color: rgb(133, 125, 105); font-size: 1rem; font-weight: bold; padding-left: 2%;}
+#read:hover{color:rgb(255, 230, 125); cursor: pointer;}
+#moreText{display: none;}
+
+/* LATEST BLOG POST */
+div.blog_section{margin-left: 5%; margin-right: 3%; margin-top: 1%;}
+div.blog_section .subheading{margin-bottom: 1%;}
+div.blog_section .blog_title{font-size: 1em; font-weight: bold; margin-top: 4%;}
+div.blog_section a{text-decoration: none;}
+.posts{display: flex;}
+.col{float: left;}
+.num{text-align: center; width:20%;} 
+.num p{color: rgb(153, 204, 255); font-family: 'Cookie', cursive; font-size: 4rem;} 
+.info{ color: rgb(133, 125, 105); padding-bottom: 1%; width: 75%;}
+.info .date{color: rgb(208, 197, 166);}
+.blog_title:hover{color: rgb(255, 230, 125);}
+
+/* FOR DESIGN ONLY */
+/* .posts{border-style: solid; border-color: green;}
+.num{border-style: solid; border-color: blue;}
+.info{border-style: solid; border-color: red;} */
+
+/* ABOUT ME */
+.about_me .subheading{margin-bottom: 3%; margin-left: 5%; margin-top: 8%;}
+.about_me p{color: rgb(133, 125, 105); font-size: 1.01em; line-height: 120%; margin-left: 11%; padding-right: 30%; text-align: justify;}
+.about_me img{border-radius: 10%; float: right; height: auto; margin-left: 5%; margin-right: 5%; width: 35%;}
+.about_me button{border-style: ridge; cursor: pointer; display: block; margin-left: auto; margin-right: auto; margin-top: 3%; padding: 1% 2%; text-decoration: none;}
+.about_me a{color: rgb(133, 125, 105); font-weight: bold; text-decoration: none;}
+
+/* FILLER IMAGE */
+.fill{display: flex; justify-content: center; margin-top: 8%;}
+.fill img{border-color: rgb(217, 217, 217); border-radius: 50%; border-style:solid; display: block; padding: 3% 0;}
+
+/* FOOTER */
+footer{background-color: rgb(208, 197, 166); padding: 0.25% 0; text-align: center;}
+footer a{color: black; text-decoration: none;}
+
+/* HAMBURGER MENU */
+/* menu button */
+#bttnMobileNav{background-color: white; border-style: none; display: none; margin: 0.75% 0; position: absolute; right: 5%; width: 10%;}
+#bttnMobileNav:hover{cursor: pointer; opacity: 0.7;}
+#bttnMobileNav span{background-color: rgb(208, 197, 166); display: block; margin: 15% 0; padding: 8%;}
+/* close menu button */
+#bttnMobileClose{background-color: white; border-style: none; color: rgb(208, 197, 166); font-size: 1.5rem; font-weight: bold; left: 38%; margin-top: 3%; position: relative; text-align: center; width: 20%;}
+#bttnMobileClose:hover{cursor: pointer; opacity: 0.7;}
+/* mobile nav */
+#mobileNav{background-color: white; border-style: solid; display: none; margin-top: 0.5%; padding-bottom: 2%; position: absolute; right: 2%; width: 30%; z-index: 100;}
+#mobileNav button{background-color: white; border-style: none; color: rgb(133, 125, 105);font-size: 3vw; font-weight: bold; text-transform: uppercase;}
+#mobileNav button:hover{color: rgb(153, 204, 255); cursor: pointer;}
+#mobileNav ul{padding: 1% 2.5%; text-align: center;}
+#mobileNav li{list-style-type: none; padding-bottom: 2%;}
+#mobileNav a{color: rgb(133, 125, 105); font-size: 3vw; font-weight: bold; text-decoration: none; text-transform: uppercase;}
+#mobileNav a:hover{color: rgb(153, 204, 255);}
+#mobileCat{display: none;}
+#mobileCat a{font-size: 2.25vw; text-align: left;}
+
+/* SMALL WINDOW + MOBILE DESIGN */
+@media only screen and (max-width: 800px){
+        /* TOP LOGO */
+        #top img{max-width: 55%;}
+
+        /* COLUMNS */
+        .row{display: block;}
+        .column{border-color: rgba(153, 204, 255, 0.4); border-style: none solid; border-width: 0 3vw; margin-left: 0; margin-right: 0; width: 92%;}
+
+        /* GENERAL FONT SIZE */
+        .subheading{font-size: 5.5vw;}
+
+        /*LATEST CREATIONS */
+        .instagram{width: 20%;}
+        div.myPhotos .text{font-size: 2.5vw;}
+
+        /* ABOUT THE SITE */
+        #read, .about_site p{font-size: 2.25vw;}
+
+        /* BLOG POSTS */
+        .num{text-align: left; width: 10%;}
+        .info{font-size: 2.25vw;}
+
+        /* ABOUT ME */
+        .about_me{font-size: 2.25vw;}
+        .about_me p{margin-left: 5%;}
+        .about_me button{font-size: 2vw;}
+
+        /* FILL IMAGE */
+        .fill img{display: none;}
+
+        /* FOOTER */
+        footer{font-size: 2vw;}
+}
+
+
+/* MOBILE ONLY DESIGN */
+@media only screen and (max-width: 475px){
+
+        /* body{background-color: yellow;} */
+
+        /* HAMBURGER MENU */
+        nav{display: none;}
+        #bttnMobileNav{display: block;}
+        #mobileNav{width: 40%;}
+        #mobileNav a, #mobileNav button{font-size: 4.5vw;}
+        #mobileCat a{font-size: 3vw;}
+
+        /*LATEST CREATIONS */
+        div.myPhotos .text{font-size: 3vw;}
+        .prev, .next{font-size: 2rem;}
+
+        /* ABOUT THE SITE */
+        #read, .about_site p{font-size: 3.5vw;}
+
+        /* BLOG POSTS */
+        .info{font-size: 3.5vw;}
+        .num{font-size: 2vw; text-align: left; width: 15%;}
+
+        /* ABOUT ME */
+        .about_me{font-size: 3.5vw;}
+        .about_me button{font-size: 3vw;}
+
+        /* FOOTER */
+        footer{font-size: 2.5vw;}
+}
