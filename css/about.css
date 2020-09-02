@@ -57,8 +57,8 @@ nav a:hover{color: rgb(153, 204, 255);}
 .text{font-size: 1rem; letter-spacing: 0.02rem; line-height: 140%;}
 
 /* PICTUER OF ME */
-.image{border-style: solid; width: 90%;}
-img#me{border-style: solid; border-color: red; display: block; margin-bottom: auto; margin-left: auto; margin-right: 5%; margin-top: 5%; width: 100%;}
+.image{width: 90%;}
+img#me{display: block; margin-bottom: auto; margin-left: auto; margin-right: 5%; margin-top: 5%; width: 100%;}
 
 /* FOOTER */
 footer{background-color: rgb(208, 197, 166); padding: 0.25% 0; text-align: center;}
@@ -120,6 +120,9 @@ footer a{color: black; text-decoration: none;}
     /* FONT SIZES */
     .subheading{font-size: 6.5vw;}
     .about_me p{font-size: 3.5vw;}
+    
+    /* IMAGE */
+    .img#me{transform: scale(0.8, 0.8);}
 
     /* FOOTER */
     footer{font-size: 2.5vw;}
