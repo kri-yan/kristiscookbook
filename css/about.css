@@ -97,8 +97,8 @@ footer a{color: black; text-decoration: none;}
     .about_me p{font-size: 2.25vw;}
 
     /* IMAGE */
-    .image{display: flex; justify-content: center; padding-bottom: 2%;}
-    img#me{margin: 0;}
+    .image{display: flex; justify-content: center;}
+    img#me{margin: 0; transform: scale(0.7, 0.7);}
 
     /* FOOTER */
     footer{font-size: 1.5vw;}
@@ -120,9 +120,6 @@ footer a{color: black; text-decoration: none;}
     /* FONT SIZES */
     .subheading{font-size: 6.5vw;}
     .about_me p{font-size: 3.5vw;}
-    
-    /* IMAGE */
-    .img#me{transform: scale(0.8, 0.8);}
 
     /* FOOTER */
     footer{font-size: 2.5vw;}
