@@ -133,7 +133,7 @@ footer a{color: black; text-decoration: none;}
 #mobileCat a{font-size: 2.25vw; text-align: left;}
 
 /* SMALL WINDOW + MOBILE DESIGN */
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1024px){
         /* TOP LOGO */
         #top img{max-width: 55%;}
 
@@ -169,7 +169,7 @@ footer a{color: black; text-decoration: none;}
 
 
 /* MOBILE ONLY DESIGN */
-@media only screen and (max-width: 475px){
+@media only screen and (max-width: 812px){
 
         /* body{background-color: yellow;} */
 
