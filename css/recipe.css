@@ -60,6 +60,9 @@ nav a:hover{color: rgb(153, 204, 255);}
 .sub_lbl{color: rgb(175, 175, 175); padding-top: 1%; text-transform: uppercase;}
 .recipe li{font-size: 1.05rem; padding: 0.3rem 0 0.2rem 0.5rem;}
 .sub_steps{padding-left: 4rem;}
+.credit{color: rgb(133, 125, 105);}
+.credit a{color: rgb(133, 125, 105); text-decoration: none;}
+.credit a:hover{color: rgb(175, 175, 175);}
 
 /* RECIPE LIST */
 .sticky_side{position: -webkit-sticky; position: sticky; top: 5%;}
