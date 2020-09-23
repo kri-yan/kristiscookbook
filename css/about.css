@@ -57,7 +57,7 @@ nav a:hover{color: rgb(153, 204, 255);}
 .text{font-size: 1rem; letter-spacing: 0.02rem; line-height: 140%;}
 
 /* PICTUER OF ME */
-.image{border-style: solid; border-color: orange; width: 90%;}
+.image{width: 90%;}
 img#me{display: block; margin-bottom: auto; margin-left: auto; margin-right: 5%; margin-top: 5%; width: 100%;}
 
 /* FOOTER */
