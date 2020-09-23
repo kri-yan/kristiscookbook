@@ -14,7 +14,7 @@ IMAGES
 Food images for recipe desc & index formatted as 4:3 and height = 350
 Blog images have width = 425
 Resources icon images have formatted as 3:2 and height = 200
-Recommendation images formatted as square & height = 500
+Recommendation images formatted as square & height = 250
 */
 
 *{font-family: 'Lato', sans-serif; margin:0;}
@@ -222,8 +222,8 @@ footer a{color: black; text-decoration: none;}
     
     /* IMAGE */
     .product{display: block; border-style: none;}
-    .image{border-style: solid; border-color: pink; justify-content: center; padding-top: 2%; min-width: 0;}
-    .image img{border-style: solid; max-width: 80%;}
+    .image{justify-content: center; padding-top: 2%; min-width: 0;}
+    .image img{max-width: 80%;}
     .content{border-color: rgb(217, 217, 217); border-bottom-style: solid; padding: 3% 5%;}
 
     /* SEARCH MENU */
