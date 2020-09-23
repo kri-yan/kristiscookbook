@@ -222,7 +222,7 @@ footer a{color: black; text-decoration: none;}
     
     /* IMAGE */
     .product{display: block; border-style: none;}
-    .image{border-style: solid; border-color: purple; justify-content: center; padding-top: 2%; min-width: 0;}
+    .image{border-style: solid; border-color: pink; justify-content: center; padding-top: 2%; min-width: 0;}
     .image img{border-style: solid; max-width: 80%;}
     .content{border-color: rgb(217, 217, 217); border-bottom-style: solid; padding: 3% 5%;}
 
