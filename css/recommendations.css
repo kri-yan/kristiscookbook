@@ -73,7 +73,7 @@ hr{border-color: rgb(217, 217, 217); border-style: solid; border-width: 0.1rem; 
 /* PRODUCT */
 .product{border-color: rgb(217, 217, 217); border-bottom-style: solid; display: flex; justify-content: center; margin-bottom: 0.75%; padding-bottom: 0.75%;}
 .content{float: right; padding: 1%; padding-right: 3%;}
-.name{background-color: yellow; color: rgb(133, 125, 105); font-size: 1.6rem; font-weight: bold; padding-bottom: 1%; text-transform: uppercase;}
+.name{color: rgb(133, 125, 105); font-size: 1.6rem; font-weight: bold; padding-bottom: 1%; text-transform: uppercase;}
 .desc{text-align: justify;}
 .lbl{display: inline; font-weight: bold;}
 .info{display: inline;}
