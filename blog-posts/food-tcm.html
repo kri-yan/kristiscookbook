@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/blog.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">  
+    <!-- Javascript -->
+    <script src="../javascript/mobileNav.js"></script>
+    <title> Kristi's Cookbook | Food in TCM </title>
+</head>
+<body>
+	<!-- Header -->
+	<header id="top_page">
+        <br>
+	</header>
+	
+	<!-- Nav -->
+	<div id="top">
+        <a href="../index.html"> <img src="../images/small_logo.jpg" alt="Kristi's Cookbook"></a>
+	<nav>
+    <div class="decor_bar">
+        <br>
+    </div>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../about.html"> About </a>
+        <a href="../resources.html">Resources</a>
+        <div class="dropdown">
+            <a href="../recipe_desc.html"> Recipes </a>
+            <div class="categories">
+                <a href="../all_recipes.html">All Recipes</a> 
+                <a href="../breakfast.html">Breakfast</a>
+                <a href="../desserts.html">Desserts</a>
+                <a href="../drinks.html">Drinks</a>
+                <a href="../meat.html">Meat & Tofu</a>
+                <a href="../pasta.html">Pasta & Noodles</a>
+                <a href="../seafood.html">Seafood</a>
+                <a href="../soup.html">Soups</a>
+                <a href="../snacks.html">Snacks</a>
+                <a href="../vegetables.html">Vegetables</a>
+            </div>
+        </div>
+        <a href="../blog.html"> Blog </a>
+    </div>
+	</nav>
+    </div>
+    <div class="decor_bar">
+        <br>
+    </div>
+    <!-- Begin Content -->
+    <!-- Mobile Nav -->
+    <button id="bttnMobileNav" onclick="openMobile()"> <span></span><span></span><span></span> </button>
+    <div id="mobileNav">
+        <button id="bttnMobileClose" onclick="closeMobile()"> &#10006; </button>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../resources.html">Resources</a></li>
+            <li><button onclick="mobiledrop()"> Recipes&#9662; </button></li>
+                <ul id="mobileCat">
+                    <li><a href="../all_recipes.html">Recipe Index</a></li>
+                    <li><a href="../breakfast.html">Breakfast</a></li>
+                    <li><a href="../desserts.html">Desserts</a></li>
+                    <li><a href="../drinks.html">Drinks</a></li>
+                    <li><a href="../meat.html">Meat & Tofu</a></li>
+                    <li><a href="../pasta.html">Pasta & Noodles</a></li>
+                    <li><a href="../seafood.html">Seafood</a></li>
+                    <li><a href="../soup.html">Soups</a></li>
+                    <li><a href="../snacks.html">Snacks</a></li>
+                    <li><a href="../vegetables.html">Vegetables</a></li>
+                </ul>
+            <li><a href="../blog.html">Blog</a></li>
+        </ul>
+    </div>
+    <div class="post">
+        <!-- Title of Blog Post -->
+        <h1 id="head" class="subheading"> The Role of Food in Energetic Balance </h1>
+        <p class="info"> Kristi Yang |
+            September 22, 2020 </p>
+        <!-- Image for Post -->
+        <img src="../images/blog/yin_yang.jpg">
+        <!-- Main Content for Post -->
+        <div class="content">
+            <p>
+                I grew up in a Taiwanese household. Although I was born and raised in the US, my parents never wanted me to forget my roots. This meant that I learned how to write Chinese calligraphy, spoke a blend of Chinese and English at home, and ate lots of yummy Taiwanese food that my mom would make. It also meant getting told that I should eat certain foods at certain times because of the energy inside my body. If I ate too much spicy food, my mom would tell me that my body 上火 (shanghuo) and I needed to eat more foods that would降火 (jianghuo). It seemed to make sense to me because 上 (shang) typically refers to something increasing or up while 降 (jiang) typically refers to reducing. So, I figured if my 火 (huo), or fire, was increased, I should be eating things that will help it go back down. But I never really understood what was this “fire” in my body. I just did what was told and ate what she gave me – it was all good food anyways so why question it.
+            </p>
+            <br>
+            <p>
+                Years later, I started to live in my own apartment which meant that I was planning meals and deciding snacks for myself. I didn’t have my mom to tell me that I need to eat some oranges or tofu after eating too much fried foods or cherries. Considering I didn’t really know what 上火 (shanghuo) or 降火 (jianghuo), I didn’t think that there would be a noticeable impact from my change in diet, but I was wrong. One summer, after a week of eating spicy foods, fried foods, and drinking coffee, I started to feel uncomfortable. I was developing more pimples and rashes, nosebleeds became more common, and my body just felt overheated all the time. At first, I thought I just needed to drink more water, and the heat of the summer was really getting to me. But a week went by and nothing really changed, so I called my mom. She reminded me about eating balanced foods, and within a week, I started to feel much better. So, I finally decided to understand this “fire” inside of me. 
+            </p>
+            <br> 
+            <p>
+                In Traditional Chinese Medicine (TCM), there exists two forces that are opposite: Yin and Yang. These opposing forces complement each other to form balance that creates all life and energy. All things contain some amount of these forces, but not all things are created equal. Some things have more Yin while others have more Yang. This is true for food as well. Although all foods have some of both, there are certain foods that have more Yin and others that have more Yang. Yin foods, or cold foods, have cooling properties that calms the “fire” or energy in the body, and helps to remove excess toxins. Yang foods, or hot foods, tend to warm the body, and helps with blood flow and circulation. 
+            </p>
+            <br>
+            <p>
+                In addition to knowing the properties of hot and cold foods, it’s also important to know when to eat what type of food. Climate and weather also affect the energy in the body. In hot and humid weather, the body is more likely to 上火 (shanghuo). As a result, it’s recommended to eat more cold foods like cucumbers or oranges in order to help cool the body from the heat. The opposite is true for cold and dry weather. The lack of warmth and heat in the body leaves imbalance. Thus, people eat more hot foods like ginger or soup in order to replenish the warmth. By making sure that a diet has both cold and hot foods, the body can maintain energetic balance.
+            </p>
+        </div>
+        <!-- Tips & Extra Content -->
+        <div class="additional content four">
+            <p class="sub-title"> Cold & Hot Foods: </p>
+            <p> Cold & Hot Foods are based on an individual, and can have different effects from person to person. </p>
+            <div class="table_box">
+            <table>
+                <tr>
+                    <th></th>
+                    <th> Cold Foods (Yin) </th>
+                    <th> Neutral Foods </th>
+                    <th> Hot Foods (Yang) </th>
+                </tr>
+                <!-- Fruit -->
+                <tr>
+                    <td class="side_lbl" rowspan="10"> Fruit</td>
+                    <td> Apples </td>
+                    <td> Grapes </td>
+                    <td> Cherries </td>
+                </tr>
+                <tr>
+                    <td> Bananas </td>
+                    <td> Lemons </td>
+                    <td> Guava </td>
+                </tr>
+                <tr>
+                    <td> Coconut </td>
+                    <td> Olives </td>
+                    <td> Peaches </td>
+                </tr>
+                <tr>
+                    <td> Grapeftuis </td>
+                    <td> Plums </td>
+                    <td> Raspberries </td>
+                </tr>
+                <tr>
+                    <td> Kiwis </td>
+                    <td>  </td>
+                    <td>  </td>
+                </tr>
+                <tr>
+                    <td> Oranges </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> Pears </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> Strawberries </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> Tomatoes </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> Watermelon </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="empty">
+                    <td> &nbsp; </td>
+                    <td> &nbsp; </td>
+                    <td> &nbsp; </td>
+                    <td> &nbsp; </td>
+                </tr>
+                <!-- Vegetables -->
+                <tr>
+                    <td class="side_lbl" rowspan="10"> Vegetables </td>
+                    <td> Bamboo </td>
+                    <td> Chinese Cabbage </td>
+                    <td> Chili Peppers </td>
+                </tr>
+                <tr>
+                    <td> Broccoli </td>
+                    <td> Carrots </td>
+                    <td> Garlic </td>
+                </tr>
+                <tr>
+                    <td> Cauliflower </td>
+                    <td> Corn </td>
+                    <td> Ginger </td>
+                </tr>
+                <tr>
+                    <td> Celery </td>
+                    <td> Potatoes </td>
+                    <td> Onions </td>
+                </tr>
+                <tr>
+                    <td> Cucumbers </td>
+                    <td> Shiitake Mushrooms </td>
+                    <td> Peppers </td>
+                </tr>
+                <tr>
+                    <td> Green Leafy Vegetables </td>
+                    <td> Soybeans </td>
+                    <td> Pumpkins </td>
+                </tr>
+                <tr>
+                    <td> Eggplants </td>
+                    <td> Sweet Potatoes </td>
+                    <td> Shallots </td>
+                </tr>
+                <tr>
+                    <td> Lotus Root </td>
+                    <td> Taro </td>
+                    <td> Squash </td>
+                </tr>
+                <tr>
+                    <td> Radishes </td>
+                    <td> </td>
+                    <td>  </td>
+                </tr>
+                <tr>
+                    <td> Seaweed </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr class="empty">
+                    <td> &nbsp; </td>
+                    <td> &nbsp; </td>
+                    <td> &nbsp; </td>
+                    <td> &nbsp; </td>
+                </tr>
+                <!-- Meat & Dairy -->
+                <tr>
+                    <td class="side_lbl" rowspan="6"> Meat & Dairy </td>
+                    <td> Bean Curd </td>
+                    <td> Duck </td>
+                    <td> Beef </td>
+                </tr>
+                <tr>
+                    <td> Cheese </td>
+                    <td> Eggs </td>
+                    <td> Butter </td>
+                </tr>
+                <tr>
+                    <td> Clams </td>
+                    <td> Milk </td>
+                    <td> Chicken </td>
+                </tr>
+                <tr>
+                    <td> Yogurt </td>
+                    <td> Oysters </td>
+                    <td> Ham </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td> Pork </td>
+                    <td> Lobster </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td> Shrimp </td>
+                </tr>
+                <tr class="empty">
+                    <td> &nbsp; </td>
+                    <td> &nbsp; </td>
+                    <td> &nbsp; </td>
+                    <td> &nbsp; </td>
+                </tr>
+                <!-- Beverages -->
+                <tr>
+                    <td class="side_lbl" rowspan="5"> Beverages </td>
+                    <td> Coconut Water </td>
+                    <td> Honey </td>
+                    <td> Chai Tea </td>
+                </tr>
+                <tr>
+                    <td> Chamomile Tea </td>
+                    <td> </td>
+                    <td> Cinnamon Drinks </td>
+                </tr>
+                <tr>
+                    <td> Green Tea </td>
+                    <td> </td>
+                    <td> Coffee </td>
+                </tr>
+                <tr>
+                    <td> Mint Tea </td>
+                    <td> </td>
+                    <td> Ginger Drinks </td>
+                </tr>
+                <tr>
+                    <td> Soybean Milk </td>
+                    <td> </td>
+                    <td> Wine </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <!-- Sources/Further Reading-->
+        <div class="additional content">
+            <p class="sub-title"> Sources Used + Further Reading: </p>
+            <p> Blog Post: </p>
+            <ol>
+                <li><a href="https://www.huffpost.com/entry/warming-cooling-foods_l_5e15f675c5b687c7eb5ebb55?guccounter=1" target="_blank"> "How Balancing 'Warming' and 'Cooling' Foods Could Benefit Your Health" by Erica Sweeney </a></li>
+                <li><a href="https://www.euyansang.com.sg/en/tcm-basics-%E2%80%93-food/eystcmoverview4.html" target="_blank"> "TCM Basics - Food" by EuYanSang </a></li>
+                <li><a href="https://projectpengyou.org/what-the-heck-is-shanghuo/" target="_blank"> "What the Heck is 'Shanghuo'?" by Ellen Hao</a></li>
+            </ol>
+            <br>
+            <p> Cold & Hot Foods Chart: </p>
+            <ol>
+                <li><a href="http://www.shen-nong.com/eng/lifestyles/food_property_food_tcm.html" target="_blank"> "Properties of Food from a TCM Perspective" by Shen Nong </a></li>
+                <li><a href="https://www.pingminghealth.com/article/581/warming-and-cooling-characteristics-of-common-foods/" target="_blank"> "Warming and Cooling Characteristics of Common Foods" by Dr. Ping Wang </a></li>
+            </ol>
+        </div>
+    </div>
+    <!-- Back to Top -->
+    <a class="to_top" href="#top_page">  &#8593; </a>
+
+    <!-- Footer -->
+	<footer>
+		<p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> by Kristi Yang | <a href="../credit.html"> Credits Page </a></p>
+	</footer>
+</body>
+</html>
