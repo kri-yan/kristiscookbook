@@ -14,7 +14,7 @@ IMAGES
 Food images for recipe desc & index formatted as 4:3 and height = 350
 Blog images have width = 425
 Resources icon images have formatted as 3:2 and height = 200
-Recommendation images formatted as square & height = 250
+Recommendation images formatted as square & height = 500
 */
 
 *{font-family: 'Lato', sans-serif; margin:0;}
@@ -73,7 +73,7 @@ hr{border-color: rgb(217, 217, 217); border-style: solid; border-width: 0.1rem; 
 /* PRODUCT */
 .product{border-color: rgb(217, 217, 217); border-bottom-style: solid; display: flex; justify-content: center; margin-bottom: 0.75%; padding-bottom: 0.75%;}
 .content{float: right; padding: 1%; padding-right: 3%;}
-.name{color: rgb(133, 125, 105); font-size: 1.6rem; font-weight: bold; padding-bottom: 1%; text-transform: uppercase;}
+.name{background-color: yellow; color: rgb(133, 125, 105); font-size: 1.6rem; font-weight: bold; padding-bottom: 1%; text-transform: uppercase;}
 .desc{text-align: justify;}
 .lbl{display: inline; font-weight: bold;}
 .info{display: inline;}
@@ -222,7 +222,7 @@ footer a{color: black; text-decoration: none;}
     
     /* IMAGE */
     .product{display: block; border-style: none;}
-    .image{justify-content: center; padding-top: 2%; min-width: 0;}
+    .image{justify-content: center; padding-top: 2%; min-width: 5rem;}
     .image img{max-width: 80%;}
     .content{border-color: rgb(217, 217, 217); border-bottom-style: solid; padding: 3% 5%;}
 
