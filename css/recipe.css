@@ -73,10 +73,11 @@ nav a:hover{color: rgb(153, 204, 255);}
 .recipe_list a:hover{color: rgb(153, 204, 255);}
 
 /* SEARCH BAR */
-.searchbar{display: flex; justify-content: center; margin-top: 2%; width: 100%;}
-.searchbar button{border-style: none; background-color: white; padding: 1% 2%;}
-.searchbar button:hover{cursor: pointer;}
-#inputSearch{background-image: url("../images/icons/searchbar-icon.jpg"); background-position: 3% 50%; background-repeat: no-repeat; display: block; float: left; height: 3.5vh; padding: 1% 2%; padding-left: 10%; margin-bottom: auto; margin-top: auto; margin-right: 4%; width: 45%;}
+.searchbar{border-style: solid; border-width: thin; display: flex; padding-left: 4%; margin-top: 2%; margin-left: auto; margin-right: auto; width: 80%;}
+/* .searchbar button{border-style: none; background-color: white; padding: 1% 2%;}
+.searchbar button:hover{cursor: pointer;} */
+#inputSearch{border-style: none; display: block; float: left; font-size: 1rem; height: 3.5vh; padding: 1% 3%; margin-bottom: auto; margin-top: auto; margin-right: 4%; width: 45%;}
+#searchIcon{color: rgb(175, 175, 175); font-size: 1.5rem; font-weight: bold;transform: rotate(-35deg);}
 
 /* FOOTER */
 footer{background-color: rgb(208, 197, 166); padding: 0.25% 0; text-align: center;}
@@ -84,7 +85,7 @@ footer a{color: black; text-decoration: none;}
 
 /* MOBILE SEARCH BAR */
 .mobile{display: none; justify-content: center; margin: 2% 5% 2%;}
-.mobile img{margin-right: 1%; transform: rotate(-40deg) scale(0.6, 0.6);}
+#mobileIcon{color: rgb(175, 175, 175); font-size: 1.5rem; padding-right: 2%; transform: rotate(-40deg); font-weight: bold;}
 #mobileSearch{margin: auto 1%; padding: 1% 2%; width: 70%;}
 
 /* HAMBURGER MENU */

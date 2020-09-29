@@ -72,10 +72,10 @@ nav a:hover{color: rgb(153, 204, 255);}
 /* SEARCH BAR */
 .heading{color: rgb(133, 125, 105); font-family: 'Rochester', cursive; font-size: 2rem; font-weight: bold; letter-spacing: 0.02em;margin-left: 5%; margin-top: 2%; text-align: left;}
 .searchbar{display: flex; justify-content: left; margin-top: 2%; width: 100%;}
-.searchbar button{border-style: none; background-color: white; padding: 1% 2%;}
+.searchbar button{border-style: none; background-color: white; color: rgb(175, 175, 175); font-size: 2rem; font-weight: bold; padding:0; transform: rotate(-45deg);}
 .searchbar button:hover{cursor: pointer;}
-img#iconSearch{background-color: white; margin-top: 1%; transform: rotate(-40deg);} 
-img#iconSearch:hover{opacity: 0.7;}
+/* img#iconSearch{background-color: white; margin-top: 1%; transform: rotate(-40deg);} 
+img#iconSearch:hover{opacity: 0.7;} */
 #inputSearch{display: block; float: left; padding: 1.5% 3%; margin: auto 5%; width: 70%;}
 
 /* SEARCH BUTTONS */
